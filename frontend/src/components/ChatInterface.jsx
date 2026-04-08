@@ -188,7 +188,7 @@ export default function ChatInterface({ onSummaryUpdate }) {
       console.error('Chat error:', err);
       setMessages(p => [...p, {
         id: Date.now() + 1,
-        text: 'Connection error. server is down.',
+        text: 'Connection error. The medical core is taking longer than expected to respond (it may be waking up). Please try again in 30 seconds.',
         sender: 'bot',
         timestamp: new Date(),
       }]);

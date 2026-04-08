@@ -117,6 +117,65 @@ function PlaceholderView({ title, icon: Icon }) {
 }
 
 // ==============================
+// SYSTEM STATUS INDICATOR
+// ==============================
+function SystemStatus() {
+  const [status, setStatus] = useState('checking'); // checking, online, offline, waking
+
+  useEffect(() => {
+    const checkHealth = async () => {
+      try {
+        const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+        const start = Date.now();
+        const res = await fetch(`${apiUrl}/health`, { 
+          // Use a short-ish timeout for health checks if desired, but 
+          // Render spin-up can take 30s.
+        });
+        
+        if (res.ok) {
+          setStatus('online');
+        } else {
+          setStatus('offline');
+        }
+      } catch (err) {
+        // If it fails, it might be sleeping or down
+        setStatus('offline');
+      }
+    };
+
+    checkHealth();
+    const interval = setInterval(checkHealth, 60000); // Check every minute
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div className="bg-gradient-to-r from-teal-500/8 to-indigo-500/5 rounded-xl p-3.5 border border-teal-500/15">
+      <div className="flex items-center gap-2 mb-2">
+        <span className={`w-2 h-2 rounded-full shadow-[0_0_6px_rgba(0,0,0,0.2)] ${
+          status === 'online' ? 'bg-green-500 animate-pulse' : 
+          status === 'checking' ? 'bg-amber-400 animate-pulse' : 
+          'bg-red-500'
+        }`} />
+        <span className={`text-[10px] font-bold uppercase tracking-widest ${
+          status === 'online' ? 'text-teal-700' : 
+          status === 'checking' ? 'text-amber-700' : 
+          'text-rose-700'
+        }`}>
+          System {status === 'online' ? 'Online' : status === 'checking' ? 'Checking...' : 'Offline'}
+        </span>
+      </div>
+      <p className="text-[10px] text-slate-400 leading-relaxed">
+        {status === 'online' 
+          ? 'All services operational. Neural routing active.' 
+          : status === 'checking' 
+            ? 'Connecting to medical core...' 
+            : 'Backend unreachable. It may be waking up (Render free tier).'}
+      </p>
+    </div>
+  );
+}
+
+// ==============================
 // MAIN APP
 // ==============================
 export default function App() {
@@ -218,15 +277,7 @@ export default function App() {
           {/* Bottom: Status */}
           {sidebarOpen && (
             <div className="p-4 border-t border-white/20">
-              <div className="bg-gradient-to-r from-teal-500/8 to-indigo-500/5 rounded-xl p-3.5 border border-teal-500/15">
-                <div className="flex items-center gap-2 mb-2">
-                  <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse shadow-[0_0_6px_rgba(34,197,94,0.6)]" />
-                  <span className="text-[10px] text-teal-700 font-bold uppercase tracking-widest">System Online</span>
-                </div>
-                <p className="text-[10px] text-slate-400 leading-relaxed">
-                  All services operational. Neural routing active.
-                </p>
-              </div>
+              <SystemStatus />
             </div>
           )}
         </div>
