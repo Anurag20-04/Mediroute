@@ -1,0 +1,2052 @@
+[
+  {
+    "Doctor Name": "Dr. Aditya Kumar",
+    "Email": "aditya.kumar@xyzhospital.com",
+    "Phone Number": "9876543220",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "02:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Parvati Sharma",
+    "Summary": "Fractured skull from fall"
+  },
+  {
+    "Doctor Name": "Dr. Nisha Malhotra",
+    "Email": "nisha.malhotra@xyzhospital.com",
+    "Phone Number": "9876543223",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "02:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Dinesh Agarwal",
+    "Summary": "Seizure episode"
+  },
+  {
+    "Doctor Name": "Dr. Nisha Malhotra",
+    "Email": "nisha.malhotra@xyzhospital.com",
+    "Phone Number": "9876543223",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "03:00 PM",
+    "Status": "Free",
+    "Patient Name": "Archana Sharma",
+    "Summary": "Electric shock"
+  },
+  {
+    "Doctor Name": "Dr. Ananya Nair",
+    "Email": "ananya.nair@xyzhospital.com",
+    "Phone Number": "9876543215",
+    "Ward Name": "General Ward",
+    "Available Time": "11:00 AM",
+    "Status": "Free",
+    "Patient Name": "",
+    "Summary": ""
+  },
+  {
+    "Doctor Name": "Dr. Ritu Sharma",
+    "Email": "ritu.sharma@xyzhospital.com",
+    "Phone Number": "9876543226",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "07:00 PM",
+    "Status": "Free",
+    "Patient Name": "",
+    "Summary": ""
+  },
+  {
+    "Doctor Name": "Dr. Arjun Sharma",
+    "Email": "arjun.sharma@xyzhospital.com",
+    "Phone Number": "9876543210",
+    "Ward Name": "General Ward",
+    "Available Time": "07:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Balram Agarwal",
+    "Summary": "Fever and chills"
+  },
+  {
+    "Doctor Name": "Dr. Priya Mehta",
+    "Email": "priya.mehta@xyzhospital.com",
+    "Phone Number": "9876543211",
+    "Ward Name": "General Ward",
+    "Available Time": "11:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Savita Singh",
+    "Summary": "Urinary tract infection"
+  },
+  {
+    "Doctor Name": "Dr. Arjun Sharma",
+    "Email": "arjun.sharma@xyzhospital.com",
+    "Phone Number": "9876543210",
+    "Ward Name": "General Ward",
+    "Available Time": "04:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Rohan Mehta",
+    "Summary": "Constipation"
+  },
+  {
+    "Doctor Name": "Dr. Deepak Sinha",
+    "Email": "deepak.sinha@xyzhospital.com",
+    "Phone Number": "9876543228",
+    "Ward Name": "Orthopedics",
+    "Available Time": "10:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Trideep Iyer",
+    "Summary": "Rotator cuff injury"
+  },
+  {
+    "Doctor Name": "Dr. Sanjay Pillai",
+    "Email": "sanjay.pillai@xyzhospital.com",
+    "Phone Number": "9876543225",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "08:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Ranjit Agarwal",
+    "Summary": "Severe depression episodes"
+  },
+  {
+    "Doctor Name": "Dr. Vikram Bose",
+    "Email": "vikram.bose@xyzhospital.com",
+    "Phone Number": "9876543216",
+    "Ward Name": "General Ward",
+    "Available Time": "04:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Saraswati Sinha",
+    "Summary": "Diarrhea"
+  },
+  {
+    "Doctor Name": "Dr. Vikram Bose",
+    "Email": "vikram.bose@xyzhospital.com",
+    "Phone Number": "9876543216",
+    "Ward Name": "General Ward",
+    "Available Time": "05:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Meera Joshi",
+    "Summary": "Fever and chills"
+  },
+  {
+    "Doctor Name": "Dr. Nisha Malhotra",
+    "Email": "nisha.malhotra@xyzhospital.com",
+    "Phone Number": "9876543223",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "09:00 AM",
+    "Status": "Free",
+    "Patient Name": "Pallavi Joshi",
+    "Summary": "Heart attack symptoms"
+  },
+  {
+    "Doctor Name": "Dr. Sanjay Pillai",
+    "Email": "sanjay.pillai@xyzhospital.com",
+    "Phone Number": "9876543225",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "08:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Rina Reddy",
+    "Summary": "Psychosis episode"
+  },
+  {
+    "Doctor Name": "Dr. Divya Reddy",
+    "Email": "divya.reddy@xyzhospital.com",
+    "Phone Number": "9876543217",
+    "Ward Name": "General Ward",
+    "Available Time": "01:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Suresh Verma",
+    "Summary": "Constipation"
+  },
+  {
+    "Doctor Name": "Dr. Divya Reddy",
+    "Email": "divya.reddy@xyzhospital.com",
+    "Phone Number": "9876543217",
+    "Ward Name": "General Ward",
+    "Available Time": "06:00 PM",
+    "Status": "Free",
+    "Patient Name": "Arjun Kumar",
+    "Summary": "Nausea and vomiting"
+  },
+  {
+    "Doctor Name": "Dr. Ritu Sharma",
+    "Email": "ritu.sharma@xyzhospital.com",
+    "Phone Number": "9876543226",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "10:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Leela Sinha",
+    "Summary": "Insomnia and severe stress"
+  },
+  {
+    "Doctor Name": "Dr. Arjun Sharma",
+    "Email": "arjun.sharma@xyzhospital.com",
+    "Phone Number": "9876543210",
+    "Ward Name": "General Ward",
+    "Available Time": "12:00 PM",
+    "Status": "Free",
+    "Patient Name": "Trilochan Pillai",
+    "Summary": "Persistent cough"
+  },
+  {
+    "Doctor Name": "Dr. Sneha Iyer",
+    "Email": "sneha.iyer@xyzhospital.com",
+    "Phone Number": "9876543213",
+    "Ward Name": "General Ward",
+    "Available Time": "10:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Savita Singh",
+    "Summary": "Sore throat"
+  },
+  {
+    "Doctor Name": "Dr. Suresh Gupta",
+    "Email": "suresh.gupta@xyzhospital.com",
+    "Phone Number": "9876543222",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "05:00 PM",
+    "Status": "Free",
+    "Patient Name": "",
+    "Summary": ""
+  },
+  {
+    "Doctor Name": "Dr. Ritu Sharma",
+    "Email": "ritu.sharma@xyzhospital.com",
+    "Phone Number": "9876543226",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "03:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Gopinath Chopra",
+    "Summary": "Self-harm tendencies"
+  },
+  {
+    "Doctor Name": "Dr. Rohan Kapoor",
+    "Email": "rohan.kapoor@xyzhospital.com",
+    "Phone Number": "9876543212",
+    "Ward Name": "General Ward",
+    "Available Time": "09:00 AM",
+    "Status": "Free",
+    "Patient Name": "Swati Sharma",
+    "Summary": "Fever and chills"
+  },
+  {
+    "Doctor Name": "Dr. Vikram Bose",
+    "Email": "vikram.bose@xyzhospital.com",
+    "Phone Number": "9876543216",
+    "Ward Name": "General Ward",
+    "Available Time": "09:00 AM",
+    "Status": "Free",
+    "Patient Name": "Nisha Sharma",
+    "Summary": "Toothache"
+  },
+  {
+    "Doctor Name": "Dr. Meera Singh",
+    "Email": "meera.singh@xyzhospital.com",
+    "Phone Number": "9876543219",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "04:00 PM",
+    "Status": "Free",
+    "Patient Name": "Bharati Mehta",
+    "Summary": "Choking on food"
+  },
+  {
+    "Doctor Name": "Dr. Ananya Nair",
+    "Email": "ananya.nair@xyzhospital.com",
+    "Phone Number": "9876543215",
+    "Ward Name": "General Ward",
+    "Available Time": "01:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Mahesh Kapoor",
+    "Summary": "Body ache"
+  },
+  {
+    "Doctor Name": "Dr. Sunita Chopra",
+    "Email": "sunita.chopra@xyzhospital.com",
+    "Phone Number": "9876543229",
+    "Ward Name": "Orthopedics",
+    "Available Time": "05:00 PM",
+    "Status": "Free",
+    "Patient Name": "",
+    "Summary": ""
+  },
+  {
+    "Doctor Name": "Dr. Ritu Sharma",
+    "Email": "ritu.sharma@xyzhospital.com",
+    "Phone Number": "9876543226",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "10:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Alok Chopra",
+    "Summary": "Post-traumatic stress disorder"
+  },
+  {
+    "Doctor Name": "Dr. Pooja Verma",
+    "Email": "pooja.verma@xyzhospital.com",
+    "Phone Number": "9876543221",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "04:00 PM",
+    "Status": "Free",
+    "Patient Name": "Sanjay Gupta",
+    "Summary": "Gunshot wound"
+  },
+  {
+    "Doctor Name": "Dr. Nisha Malhotra",
+    "Email": "nisha.malhotra@xyzhospital.com",
+    "Phone Number": "9876543223",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "03:00 PM",
+    "Status": "Free",
+    "Patient Name": "",
+    "Summary": ""
+  },
+  {
+    "Doctor Name": "Dr. Suresh Gupta",
+    "Email": "suresh.gupta@xyzhospital.com",
+    "Phone Number": "9876543222",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "09:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Amitabh Bose",
+    "Summary": "Compound fracture"
+  },
+  {
+    "Doctor Name": "Dr. Priya Mehta",
+    "Email": "priya.mehta@xyzhospital.com",
+    "Phone Number": "9876543211",
+    "Ward Name": "General Ward",
+    "Available Time": "08:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Vinod Chopra",
+    "Summary": "Loss of appetite"
+  },
+  {
+    "Doctor Name": "Dr. Arjun Sharma",
+    "Email": "arjun.sharma@xyzhospital.com",
+    "Phone Number": "9876543210",
+    "Ward Name": "General Ward",
+    "Available Time": "04:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Mohan Chopra",
+    "Summary": "Urinary tract infection"
+  },
+  {
+    "Doctor Name": "Dr. Vikram Bose",
+    "Email": "vikram.bose@xyzhospital.com",
+    "Phone Number": "9876543216",
+    "Ward Name": "General Ward",
+    "Available Time": "06:00 PM",
+    "Status": "Free",
+    "Patient Name": "Sunita Anand",
+    "Summary": "Loss of appetite"
+  },
+  {
+    "Doctor Name": "Dr. Manish Agarwal",
+    "Email": "manish.agarwal@xyzhospital.com",
+    "Phone Number": "9876543227",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "12:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Anjali Iyer",
+    "Summary": "Autism \u2014 behavioral crisis"
+  },
+  {
+    "Doctor Name": "Dr. Rohan Kapoor",
+    "Email": "rohan.kapoor@xyzhospital.com",
+    "Phone Number": "9876543212",
+    "Ward Name": "General Ward",
+    "Available Time": "06:00 PM",
+    "Status": "Free",
+    "Patient Name": "Nandita Mehta",
+    "Summary": "Mild dizziness"
+  },
+  {
+    "Doctor Name": "Dr. Manish Agarwal",
+    "Email": "manish.agarwal@xyzhospital.com",
+    "Phone Number": "9876543227",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "04:00 PM",
+    "Status": "Free",
+    "Patient Name": "Girish Gupta",
+    "Summary": "Psychosis episode"
+  },
+  {
+    "Doctor Name": "Dr. Deepak Sinha",
+    "Email": "deepak.sinha@xyzhospital.com",
+    "Phone Number": "9876543228",
+    "Ward Name": "Orthopedics",
+    "Available Time": "03:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Amitabh Bose",
+    "Summary": "Knee ligament tear"
+  },
+  {
+    "Doctor Name": "Dr. Vikram Bose",
+    "Email": "vikram.bose@xyzhospital.com",
+    "Phone Number": "9876543216",
+    "Ward Name": "General Ward",
+    "Available Time": "12:00 PM",
+    "Status": "Free",
+    "Patient Name": "Mamta Malhotra",
+    "Summary": "Skin rash"
+  },
+  {
+    "Doctor Name": "Dr. Sunita Chopra",
+    "Email": "sunita.chopra@xyzhospital.com",
+    "Phone Number": "9876543229",
+    "Ward Name": "Orthopedics",
+    "Available Time": "03:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Leela Sinha",
+    "Summary": "Torn ACL"
+  },
+  {
+    "Doctor Name": "Dr. Rohan Kapoor",
+    "Email": "rohan.kapoor@xyzhospital.com",
+    "Phone Number": "9876543212",
+    "Ward Name": "General Ward",
+    "Available Time": "11:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Pooja Malhotra",
+    "Summary": "Mild dizziness"
+  },
+  {
+    "Doctor Name": "Dr. Ananya Nair",
+    "Email": "ananya.nair@xyzhospital.com",
+    "Phone Number": "9876543215",
+    "Ward Name": "General Ward",
+    "Available Time": "08:00 AM",
+    "Status": "Free",
+    "Patient Name": "Ramesh Agarwal",
+    "Summary": "Persistent cough"
+  },
+  {
+    "Doctor Name": "Dr. Ananya Nair",
+    "Email": "ananya.nair@xyzhospital.com",
+    "Phone Number": "9876543215",
+    "Ward Name": "General Ward",
+    "Available Time": "07:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Devendra Patel",
+    "Summary": "Body ache"
+  },
+  {
+    "Doctor Name": "Dr. Arjun Sharma",
+    "Email": "arjun.sharma@xyzhospital.com",
+    "Phone Number": "9876543210",
+    "Ward Name": "General Ward",
+    "Available Time": "06:00 PM",
+    "Status": "Free",
+    "Patient Name": "",
+    "Summary": ""
+  },
+  {
+    "Doctor Name": "Dr. Sneha Iyer",
+    "Email": "sneha.iyer@xyzhospital.com",
+    "Phone Number": "9876543213",
+    "Ward Name": "General Ward",
+    "Available Time": "01:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Kiran Bose",
+    "Summary": "Loss of appetite"
+  },
+  {
+    "Doctor Name": "Dr. Pooja Verma",
+    "Email": "pooja.verma@xyzhospital.com",
+    "Phone Number": "9876543221",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "03:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Akash Pillai",
+    "Summary": "Severe blood loss from wound"
+  },
+  {
+    "Doctor Name": "Dr. Sanjay Pillai",
+    "Email": "sanjay.pillai@xyzhospital.com",
+    "Phone Number": "9876543225",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "09:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Vijayshree Mehta",
+    "Summary": "Autism \u2014 behavioral crisis"
+  },
+  {
+    "Doctor Name": "Dr. Sunita Chopra",
+    "Email": "sunita.chopra@xyzhospital.com",
+    "Phone Number": "9876543229",
+    "Ward Name": "Orthopedics",
+    "Available Time": "12:00 PM",
+    "Status": "Free",
+    "Patient Name": "Devendra Patel",
+    "Summary": "Hip replacement follow-up"
+  },
+  {
+    "Doctor Name": "Dr. Aditya Kumar",
+    "Email": "aditya.kumar@xyzhospital.com",
+    "Phone Number": "9876543220",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "11:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Smita Singh",
+    "Summary": "Severe breathing difficulty"
+  },
+  {
+    "Doctor Name": "Dr. Sanjay Pillai",
+    "Email": "sanjay.pillai@xyzhospital.com",
+    "Phone Number": "9876543225",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "10:00 AM",
+    "Status": "Free",
+    "Patient Name": "Dev Bose",
+    "Summary": "Obsessive compulsive disorder"
+  },
+  {
+    "Doctor Name": "Dr. Deepak Sinha",
+    "Email": "deepak.sinha@xyzhospital.com",
+    "Phone Number": "9876543228",
+    "Ward Name": "Orthopedics",
+    "Available Time": "06:00 PM",
+    "Status": "Free",
+    "Patient Name": "Shalini Sinha",
+    "Summary": "Wrist fracture from fall"
+  },
+  {
+    "Doctor Name": "Dr. Vikram Bose",
+    "Email": "vikram.bose@xyzhospital.com",
+    "Phone Number": "9876543216",
+    "Ward Name": "General Ward",
+    "Available Time": "02:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Nandita Mehta",
+    "Summary": "Stomach pain"
+  },
+  {
+    "Doctor Name": "Dr. Rohan Kapoor",
+    "Email": "rohan.kapoor@xyzhospital.com",
+    "Phone Number": "9876543212",
+    "Ward Name": "General Ward",
+    "Available Time": "08:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Harishchandra Agarwal",
+    "Summary": "Urinary tract infection"
+  },
+  {
+    "Doctor Name": "Dr. Divya Reddy",
+    "Email": "divya.reddy@xyzhospital.com",
+    "Phone Number": "9876543217",
+    "Ward Name": "General Ward",
+    "Available Time": "03:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Smita Singh",
+    "Summary": "Sore throat"
+  },
+  {
+    "Doctor Name": "Dr. Deepak Sinha",
+    "Email": "deepak.sinha@xyzhospital.com",
+    "Phone Number": "9876543228",
+    "Ward Name": "Orthopedics",
+    "Available Time": "03:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Sachin Patel",
+    "Summary": "Knee ligament tear"
+  },
+  {
+    "Doctor Name": "Dr. Suresh Gupta",
+    "Email": "suresh.gupta@xyzhospital.com",
+    "Phone Number": "9876543222",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "08:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Ananya Nair",
+    "Summary": "Severe chest pain"
+  },
+  {
+    "Doctor Name": "Dr. Divya Reddy",
+    "Email": "divya.reddy@xyzhospital.com",
+    "Phone Number": "9876543217",
+    "Ward Name": "General Ward",
+    "Available Time": "04:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Alok Chopra",
+    "Summary": "Eye irritation"
+  },
+  {
+    "Doctor Name": "Dr. Arjun Sharma",
+    "Email": "arjun.sharma@xyzhospital.com",
+    "Phone Number": "9876543210",
+    "Ward Name": "General Ward",
+    "Available Time": "06:00 PM",
+    "Status": "Free",
+    "Patient Name": "Veena Anand",
+    "Summary": "Stomach pain"
+  },
+  {
+    "Doctor Name": "Dr. Manish Agarwal",
+    "Email": "manish.agarwal@xyzhospital.com",
+    "Phone Number": "9876543227",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "09:00 AM",
+    "Status": "Free",
+    "Patient Name": "Rina Reddy",
+    "Summary": "Bipolar disorder \u2014 manic phase"
+  },
+  {
+    "Doctor Name": "Dr. Divya Reddy",
+    "Email": "divya.reddy@xyzhospital.com",
+    "Phone Number": "9876543217",
+    "Ward Name": "General Ward",
+    "Available Time": "08:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Arun Patel",
+    "Summary": "Runny nose and cold"
+  },
+  {
+    "Doctor Name": "Dr. Kiran Patel",
+    "Email": "kiran.patel@xyzhospital.com",
+    "Phone Number": "9876543214",
+    "Ward Name": "General Ward",
+    "Available Time": "01:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Radha Singh",
+    "Summary": "Constipation"
+  },
+  {
+    "Doctor Name": "Dr. Kiran Patel",
+    "Email": "kiran.patel@xyzhospital.com",
+    "Phone Number": "9876543214",
+    "Ward Name": "General Ward",
+    "Available Time": "06:00 PM",
+    "Status": "Free",
+    "Patient Name": "",
+    "Summary": ""
+  },
+  {
+    "Doctor Name": "Dr. Kavita Anand",
+    "Email": "kavita.anand@xyzhospital.com",
+    "Phone Number": "9876543224",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "05:00 PM",
+    "Status": "Free",
+    "Patient Name": "Rekha Iyer",
+    "Summary": "Severe anxiety disorder"
+  },
+  {
+    "Doctor Name": "Dr. Meera Singh",
+    "Email": "meera.singh@xyzhospital.com",
+    "Phone Number": "9876543219",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "11:00 AM",
+    "Status": "Free",
+    "Patient Name": "Santosh Patel",
+    "Summary": "High-speed crash"
+  },
+  {
+    "Doctor Name": "Dr. Kiran Patel",
+    "Email": "kiran.patel@xyzhospital.com",
+    "Phone Number": "9876543214",
+    "Ward Name": "General Ward",
+    "Available Time": "04:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Yash Verma",
+    "Summary": "Runny nose and cold"
+  },
+  {
+    "Doctor Name": "Dr. Sunita Chopra",
+    "Email": "sunita.chopra@xyzhospital.com",
+    "Phone Number": "9876543229",
+    "Ward Name": "Orthopedics",
+    "Available Time": "06:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Rina Reddy",
+    "Summary": "Sprained ankle"
+  },
+  {
+    "Doctor Name": "Dr. Kavita Anand",
+    "Email": "kavita.anand@xyzhospital.com",
+    "Phone Number": "9876543224",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "10:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Lalitha Sharma",
+    "Summary": "Severe anxiety disorder"
+  },
+  {
+    "Doctor Name": "Dr. Nisha Malhotra",
+    "Email": "nisha.malhotra@xyzhospital.com",
+    "Phone Number": "9876543223",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "12:00 PM",
+    "Status": "Free",
+    "Patient Name": "Lakshmi Singh",
+    "Summary": "Seizure episode"
+  },
+  {
+    "Doctor Name": "Dr. Meera Singh",
+    "Email": "meera.singh@xyzhospital.com",
+    "Phone Number": "9876543219",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "12:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Leela Sinha",
+    "Summary": "Compound fracture"
+  },
+  {
+    "Doctor Name": "Dr. Sanjay Pillai",
+    "Email": "sanjay.pillai@xyzhospital.com",
+    "Phone Number": "9876543225",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "12:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Vijayalakshmi Kapoor",
+    "Summary": "Substance addiction withdrawal"
+  },
+  {
+    "Doctor Name": "Dr. Meera Singh",
+    "Email": "meera.singh@xyzhospital.com",
+    "Phone Number": "9876543219",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "09:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Jaideep Kapoor",
+    "Summary": "Severe chest pain"
+  },
+  {
+    "Doctor Name": "Dr. Divya Reddy",
+    "Email": "divya.reddy@xyzhospital.com",
+    "Phone Number": "9876543217",
+    "Ward Name": "General Ward",
+    "Available Time": "11:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Mahesh Kapoor",
+    "Summary": "Stomach pain"
+  },
+  {
+    "Doctor Name": "Dr. Sneha Iyer",
+    "Email": "sneha.iyer@xyzhospital.com",
+    "Phone Number": "9876543213",
+    "Ward Name": "General Ward",
+    "Available Time": "02:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Omprakash Verma",
+    "Summary": "Constipation"
+  },
+  {
+    "Doctor Name": "Dr. Rahul Joshi",
+    "Email": "rahul.joshi@xyzhospital.com",
+    "Phone Number": "9876543218",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "07:00 PM",
+    "Status": "Free",
+    "Patient Name": "Chandrakant Bose",
+    "Summary": "Compound fracture"
+  },
+  {
+    "Doctor Name": "Dr. Priya Mehta",
+    "Email": "priya.mehta@xyzhospital.com",
+    "Phone Number": "9876543211",
+    "Ward Name": "General Ward",
+    "Available Time": "04:00 PM",
+    "Status": "Free",
+    "Patient Name": "",
+    "Summary": ""
+  },
+  {
+    "Doctor Name": "Dr. Vikram Bose",
+    "Email": "vikram.bose@xyzhospital.com",
+    "Phone Number": "9876543216",
+    "Ward Name": "General Ward",
+    "Available Time": "07:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Yash Verma",
+    "Summary": "Runny nose and cold"
+  },
+  {
+    "Doctor Name": "Dr. Rahul Joshi",
+    "Email": "rahul.joshi@xyzhospital.com",
+    "Phone Number": "9876543218",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "04:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Archana Sharma",
+    "Summary": "Drowning"
+  },
+  {
+    "Doctor Name": "Dr. Arjun Sharma",
+    "Email": "arjun.sharma@xyzhospital.com",
+    "Phone Number": "9876543210",
+    "Ward Name": "General Ward",
+    "Available Time": "08:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Arun Patel",
+    "Summary": "Ear pain"
+  },
+  {
+    "Doctor Name": "Dr. Priya Mehta",
+    "Email": "priya.mehta@xyzhospital.com",
+    "Phone Number": "9876543211",
+    "Ward Name": "General Ward",
+    "Available Time": "07:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Rekha Iyer",
+    "Summary": "Sore throat"
+  },
+  {
+    "Doctor Name": "Dr. Aditya Kumar",
+    "Email": "aditya.kumar@xyzhospital.com",
+    "Phone Number": "9876543220",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "06:00 PM",
+    "Status": "Free",
+    "Patient Name": "Shweta Malhotra",
+    "Summary": "Severe blood loss from wound"
+  },
+  {
+    "Doctor Name": "Dr. Manish Agarwal",
+    "Email": "manish.agarwal@xyzhospital.com",
+    "Phone Number": "9876543227",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "06:00 PM",
+    "Status": "Free",
+    "Patient Name": "Vijayalakshmi Kapoor",
+    "Summary": "Panic attacks daily"
+  },
+  {
+    "Doctor Name": "Dr. Suresh Gupta",
+    "Email": "suresh.gupta@xyzhospital.com",
+    "Phone Number": "9876543222",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "09:00 AM",
+    "Status": "Free",
+    "Patient Name": "Manish Chopra",
+    "Summary": "Fractured skull from fall"
+  },
+  {
+    "Doctor Name": "Dr. Nisha Malhotra",
+    "Email": "nisha.malhotra@xyzhospital.com",
+    "Phone Number": "9876543223",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "10:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Rekha Iyer",
+    "Summary": "Severe breathing difficulty"
+  },
+  {
+    "Doctor Name": "Dr. Ritu Sharma",
+    "Email": "ritu.sharma@xyzhospital.com",
+    "Phone Number": "9876543226",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "12:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Tarun Bose",
+    "Summary": "Insomnia and severe stress"
+  },
+  {
+    "Doctor Name": "Dr. Ananya Nair",
+    "Email": "ananya.nair@xyzhospital.com",
+    "Phone Number": "9876543215",
+    "Ward Name": "General Ward",
+    "Available Time": "03:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Sanjay Gupta",
+    "Summary": "Loss of appetite"
+  },
+  {
+    "Doctor Name": "Dr. Ananya Nair",
+    "Email": "ananya.nair@xyzhospital.com",
+    "Phone Number": "9876543215",
+    "Ward Name": "General Ward",
+    "Available Time": "10:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Kamla Mehta",
+    "Summary": "Toothache"
+  },
+  {
+    "Doctor Name": "Dr. Arjun Sharma",
+    "Email": "arjun.sharma@xyzhospital.com",
+    "Phone Number": "9876543210",
+    "Ward Name": "General Ward",
+    "Available Time": "07:00 PM",
+    "Status": "Free",
+    "Patient Name": "Suresh Verma",
+    "Summary": "Mild headache"
+  },
+  {
+    "Doctor Name": "Dr. Deepak Sinha",
+    "Email": "deepak.sinha@xyzhospital.com",
+    "Phone Number": "9876543228",
+    "Ward Name": "Orthopedics",
+    "Available Time": "05:00 PM",
+    "Status": "Free",
+    "Patient Name": "Leela Sinha",
+    "Summary": "Hip replacement follow-up"
+  },
+  {
+    "Doctor Name": "Dr. Nisha Malhotra",
+    "Email": "nisha.malhotra@xyzhospital.com",
+    "Phone Number": "9876543223",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "11:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Shanti Iyer",
+    "Summary": "Heart attack symptoms"
+  },
+  {
+    "Doctor Name": "Dr. Pooja Verma",
+    "Email": "pooja.verma@xyzhospital.com",
+    "Phone Number": "9876543221",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "10:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Archana Sharma",
+    "Summary": "Severe breathing difficulty"
+  },
+  {
+    "Doctor Name": "Dr. Sanjay Pillai",
+    "Email": "sanjay.pillai@xyzhospital.com",
+    "Phone Number": "9876543225",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "07:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Rina Reddy",
+    "Summary": "Autism \u2014 behavioral crisis"
+  },
+  {
+    "Doctor Name": "Dr. Meera Singh",
+    "Email": "meera.singh@xyzhospital.com",
+    "Phone Number": "9876543219",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "06:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Lakshmi Singh",
+    "Summary": "Heart attack symptoms"
+  },
+  {
+    "Doctor Name": "Dr. Rohan Kapoor",
+    "Email": "rohan.kapoor@xyzhospital.com",
+    "Phone Number": "9876543212",
+    "Ward Name": "General Ward",
+    "Available Time": "04:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Nandita Mehta",
+    "Summary": "Indigestion"
+  },
+  {
+    "Doctor Name": "Dr. Pooja Verma",
+    "Email": "pooja.verma@xyzhospital.com",
+    "Phone Number": "9876543221",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "09:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Santosh Patel",
+    "Summary": "Compound fracture"
+  },
+  {
+    "Doctor Name": "Dr. Nisha Malhotra",
+    "Email": "nisha.malhotra@xyzhospital.com",
+    "Phone Number": "9876543223",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "02:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Rekha Iyer",
+    "Summary": "Heart attack symptoms"
+  },
+  {
+    "Doctor Name": "Dr. Meera Singh",
+    "Email": "meera.singh@xyzhospital.com",
+    "Phone Number": "9876543219",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "06:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Mahesh Kapoor",
+    "Summary": "Severe blood loss from wound"
+  },
+  {
+    "Doctor Name": "Dr. Suresh Gupta",
+    "Email": "suresh.gupta@xyzhospital.com",
+    "Phone Number": "9876543222",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "08:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Upendra Kumar",
+    "Summary": "Electric shock"
+  },
+  {
+    "Doctor Name": "Dr. Kavita Anand",
+    "Email": "kavita.anand@xyzhospital.com",
+    "Phone Number": "9876543224",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "04:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Manish Chopra",
+    "Summary": "Severe depression episodes"
+  },
+  {
+    "Doctor Name": "Dr. Kavita Anand",
+    "Email": "kavita.anand@xyzhospital.com",
+    "Phone Number": "9876543224",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "01:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Ajay Patel",
+    "Summary": "Post-traumatic stress disorder"
+  },
+  {
+    "Doctor Name": "Dr. Divya Reddy",
+    "Email": "divya.reddy@xyzhospital.com",
+    "Phone Number": "9876543217",
+    "Ward Name": "General Ward",
+    "Available Time": "06:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Chitra Anand",
+    "Summary": "Toothache"
+  },
+  {
+    "Doctor Name": "Dr. Deepak Sinha",
+    "Email": "deepak.sinha@xyzhospital.com",
+    "Phone Number": "9876543228",
+    "Ward Name": "Orthopedics",
+    "Available Time": "01:00 PM",
+    "Status": "Free",
+    "Patient Name": "Rina Reddy",
+    "Summary": "Hip replacement follow-up"
+  },
+  {
+    "Doctor Name": "Dr. Nisha Malhotra",
+    "Email": "nisha.malhotra@xyzhospital.com",
+    "Phone Number": "9876543223",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "07:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Pankaj Kumar",
+    "Summary": "Stroke \u2014 sudden numbness"
+  },
+  {
+    "Doctor Name": "Dr. Divya Reddy",
+    "Email": "divya.reddy@xyzhospital.com",
+    "Phone Number": "9876543217",
+    "Ward Name": "General Ward",
+    "Available Time": "07:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Swati Sharma",
+    "Summary": "Indigestion"
+  },
+  {
+    "Doctor Name": "Dr. Deepak Sinha",
+    "Email": "deepak.sinha@xyzhospital.com",
+    "Phone Number": "9876543228",
+    "Ward Name": "Orthopedics",
+    "Available Time": "02:00 PM",
+    "Status": "Free",
+    "Patient Name": "",
+    "Summary": ""
+  },
+  {
+    "Doctor Name": "Dr. Ritu Sharma",
+    "Email": "ritu.sharma@xyzhospital.com",
+    "Phone Number": "9876543226",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "04:00 PM",
+    "Status": "Free",
+    "Patient Name": "Lakshmi Singh",
+    "Summary": "Substance addiction withdrawal"
+  },
+  {
+    "Doctor Name": "Dr. Priya Mehta",
+    "Email": "priya.mehta@xyzhospital.com",
+    "Phone Number": "9876543211",
+    "Ward Name": "General Ward",
+    "Available Time": "08:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Kusum Joshi",
+    "Summary": "Skin rash"
+  },
+  {
+    "Doctor Name": "Dr. Sanjay Pillai",
+    "Email": "sanjay.pillai@xyzhospital.com",
+    "Phone Number": "9876543225",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "08:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Priti Joshi",
+    "Summary": "Eating disorder"
+  },
+  {
+    "Doctor Name": "Dr. Manish Agarwal",
+    "Email": "manish.agarwal@xyzhospital.com",
+    "Phone Number": "9876543227",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "11:00 AM",
+    "Status": "Free",
+    "Patient Name": "Ramesh Agarwal",
+    "Summary": "Anorexia nervosa"
+  },
+  {
+    "Doctor Name": "Dr. Aditya Kumar",
+    "Email": "aditya.kumar@xyzhospital.com",
+    "Phone Number": "9876543220",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "08:00 AM",
+    "Status": "Free",
+    "Patient Name": "Kusum Joshi",
+    "Summary": "Compound fracture"
+  },
+  {
+    "Doctor Name": "Dr. Sunita Chopra",
+    "Email": "sunita.chopra@xyzhospital.com",
+    "Phone Number": "9876543229",
+    "Ward Name": "Orthopedics",
+    "Available Time": "10:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Yash Verma",
+    "Summary": "Dislocated shoulder"
+  },
+  {
+    "Doctor Name": "Dr. Rahul Joshi",
+    "Email": "rahul.joshi@xyzhospital.com",
+    "Phone Number": "9876543218",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "08:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Alok Chopra",
+    "Summary": "Drowning"
+  },
+  {
+    "Doctor Name": "Dr. Arjun Sharma",
+    "Email": "arjun.sharma@xyzhospital.com",
+    "Phone Number": "9876543210",
+    "Ward Name": "General Ward",
+    "Available Time": "01:00 PM",
+    "Status": "Free",
+    "Patient Name": "Dev Bose",
+    "Summary": "Sore throat"
+  },
+  {
+    "Doctor Name": "Dr. Rohan Kapoor",
+    "Email": "rohan.kapoor@xyzhospital.com",
+    "Phone Number": "9876543212",
+    "Ward Name": "General Ward",
+    "Available Time": "07:00 PM",
+    "Status": "Free",
+    "Patient Name": "Veena Anand",
+    "Summary": "Fatigue and weakness"
+  },
+  {
+    "Doctor Name": "Dr. Rohan Kapoor",
+    "Email": "rohan.kapoor@xyzhospital.com",
+    "Phone Number": "9876543212",
+    "Ward Name": "General Ward",
+    "Available Time": "09:00 AM",
+    "Status": "Free",
+    "Patient Name": "Geeta Anand",
+    "Summary": "Mild dizziness"
+  },
+  {
+    "Doctor Name": "Dr. Kiran Patel",
+    "Email": "kiran.patel@xyzhospital.com",
+    "Phone Number": "9876543214",
+    "Ward Name": "General Ward",
+    "Available Time": "05:00 PM",
+    "Status": "Free",
+    "Patient Name": "Varsha Reddy",
+    "Summary": "Mild headache"
+  },
+  {
+    "Doctor Name": "Dr. Pooja Verma",
+    "Email": "pooja.verma@xyzhospital.com",
+    "Phone Number": "9876543221",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "10:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Varsha Reddy",
+    "Summary": "Burns on arm"
+  },
+  {
+    "Doctor Name": "Dr. Sneha Iyer",
+    "Email": "sneha.iyer@xyzhospital.com",
+    "Phone Number": "9876543213",
+    "Ward Name": "General Ward",
+    "Available Time": "08:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Trilochan Pillai",
+    "Summary": "Indigestion"
+  },
+  {
+    "Doctor Name": "Dr. Deepak Sinha",
+    "Email": "deepak.sinha@xyzhospital.com",
+    "Phone Number": "9876543228",
+    "Ward Name": "Orthopedics",
+    "Available Time": "10:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Amitabh Bose",
+    "Summary": "Arthritis flare-up"
+  },
+  {
+    "Doctor Name": "Dr. Aditya Kumar",
+    "Email": "aditya.kumar@xyzhospital.com",
+    "Phone Number": "9876543220",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "06:00 PM",
+    "Status": "Free",
+    "Patient Name": "Kavya Iyer",
+    "Summary": "Severe blood loss from wound"
+  },
+  {
+    "Doctor Name": "Dr. Manish Agarwal",
+    "Email": "manish.agarwal@xyzhospital.com",
+    "Phone Number": "9876543227",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "10:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Manjula Singh",
+    "Summary": "Post-traumatic stress disorder"
+  },
+  {
+    "Doctor Name": "Dr. Priya Mehta",
+    "Email": "priya.mehta@xyzhospital.com",
+    "Phone Number": "9876543211",
+    "Ward Name": "General Ward",
+    "Available Time": "04:00 PM",
+    "Status": "Free",
+    "Patient Name": "Kamlesh Kumar",
+    "Summary": "Mild dizziness"
+  },
+  {
+    "Doctor Name": "Dr. Aditya Kumar",
+    "Email": "aditya.kumar@xyzhospital.com",
+    "Phone Number": "9876543220",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "12:00 PM",
+    "Status": "Free",
+    "Patient Name": "",
+    "Summary": ""
+  },
+  {
+    "Doctor Name": "Dr. Pooja Verma",
+    "Email": "pooja.verma@xyzhospital.com",
+    "Phone Number": "9876543221",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "02:00 PM",
+    "Status": "Free",
+    "Patient Name": "Mamta Malhotra",
+    "Summary": "Severe allergic reaction"
+  },
+  {
+    "Doctor Name": "Dr. Divya Reddy",
+    "Email": "divya.reddy@xyzhospital.com",
+    "Phone Number": "9876543217",
+    "Ward Name": "General Ward",
+    "Available Time": "10:00 AM",
+    "Status": "Free",
+    "Patient Name": "Manjula Singh",
+    "Summary": "Mild dizziness"
+  },
+  {
+    "Doctor Name": "Dr. Kiran Patel",
+    "Email": "kiran.patel@xyzhospital.com",
+    "Phone Number": "9876543214",
+    "Ward Name": "General Ward",
+    "Available Time": "12:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Madhuri Malhotra",
+    "Summary": "Constipation"
+  },
+  {
+    "Doctor Name": "Dr. Sanjay Pillai",
+    "Email": "sanjay.pillai@xyzhospital.com",
+    "Phone Number": "9876543225",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "10:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Savita Singh",
+    "Summary": "Substance addiction withdrawal"
+  },
+  {
+    "Doctor Name": "Dr. Pooja Verma",
+    "Email": "pooja.verma@xyzhospital.com",
+    "Phone Number": "9876543221",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "08:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Sunil Kumar",
+    "Summary": "Loss of consciousness"
+  },
+  {
+    "Doctor Name": "Dr. Aditya Kumar",
+    "Email": "aditya.kumar@xyzhospital.com",
+    "Phone Number": "9876543220",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "05:00 PM",
+    "Status": "Free",
+    "Patient Name": "Ajay Patel",
+    "Summary": "Fractured skull from fall"
+  },
+  {
+    "Doctor Name": "Dr. Meera Singh",
+    "Email": "meera.singh@xyzhospital.com",
+    "Phone Number": "9876543219",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "11:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Radha Singh",
+    "Summary": "Compound fracture"
+  },
+  {
+    "Doctor Name": "Dr. Sanjay Pillai",
+    "Email": "sanjay.pillai@xyzhospital.com",
+    "Phone Number": "9876543225",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "10:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Ajay Patel",
+    "Summary": "Grief and acute stress"
+  },
+  {
+    "Doctor Name": "Dr. Pooja Verma",
+    "Email": "pooja.verma@xyzhospital.com",
+    "Phone Number": "9876543221",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "06:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Manjula Singh",
+    "Summary": "Electric shock"
+  },
+  {
+    "Doctor Name": "Dr. Suresh Gupta",
+    "Email": "suresh.gupta@xyzhospital.com",
+    "Phone Number": "9876543222",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "02:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Aditya Pillai",
+    "Summary": "Severe allergic reaction"
+  },
+  {
+    "Doctor Name": "Dr. Suresh Gupta",
+    "Email": "suresh.gupta@xyzhospital.com",
+    "Phone Number": "9876543222",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "03:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Suresh Verma",
+    "Summary": "Compound fracture"
+  },
+  {
+    "Doctor Name": "Dr. Ananya Nair",
+    "Email": "ananya.nair@xyzhospital.com",
+    "Phone Number": "9876543215",
+    "Ward Name": "General Ward",
+    "Available Time": "10:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Shobha Malhotra",
+    "Summary": "Runny nose and cold"
+  },
+  {
+    "Doctor Name": "Dr. Suresh Gupta",
+    "Email": "suresh.gupta@xyzhospital.com",
+    "Phone Number": "9876543222",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "06:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Seema Reddy",
+    "Summary": "Loss of consciousness"
+  },
+  {
+    "Doctor Name": "Dr. Manish Agarwal",
+    "Email": "manish.agarwal@xyzhospital.com",
+    "Phone Number": "9876543227",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "12:00 PM",
+    "Status": "Free",
+    "Patient Name": "",
+    "Summary": ""
+  },
+  {
+    "Doctor Name": "Dr. Sunita Chopra",
+    "Email": "sunita.chopra@xyzhospital.com",
+    "Phone Number": "9876543229",
+    "Ward Name": "Orthopedics",
+    "Available Time": "08:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Pallavi Joshi",
+    "Summary": "Wrist fracture from fall"
+  },
+  {
+    "Doctor Name": "Dr. Aditya Kumar",
+    "Email": "aditya.kumar@xyzhospital.com",
+    "Phone Number": "9876543220",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "08:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Savita Singh",
+    "Summary": "Unconscious patient"
+  },
+  {
+    "Doctor Name": "Dr. Manish Agarwal",
+    "Email": "manish.agarwal@xyzhospital.com",
+    "Phone Number": "9876543227",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "10:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Nirmala Reddy",
+    "Summary": "Obsessive compulsive disorder"
+  },
+  {
+    "Doctor Name": "Dr. Rohan Kapoor",
+    "Email": "rohan.kapoor@xyzhospital.com",
+    "Phone Number": "9876543212",
+    "Ward Name": "General Ward",
+    "Available Time": "12:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Sudha Sharma",
+    "Summary": "Eye irritation"
+  },
+  {
+    "Doctor Name": "Dr. Kavita Anand",
+    "Email": "kavita.anand@xyzhospital.com",
+    "Phone Number": "9876543224",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "08:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Sarita Anand",
+    "Summary": "Substance addiction withdrawal"
+  },
+  {
+    "Doctor Name": "Dr. Vikram Bose",
+    "Email": "vikram.bose@xyzhospital.com",
+    "Phone Number": "9876543216",
+    "Ward Name": "General Ward",
+    "Available Time": "06:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Diya Patel",
+    "Summary": "Back pain"
+  },
+  {
+    "Doctor Name": "Dr. Priya Mehta",
+    "Email": "priya.mehta@xyzhospital.com",
+    "Phone Number": "9876543211",
+    "Ward Name": "General Ward",
+    "Available Time": "09:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Pramod Pillai",
+    "Summary": "Mild dizziness"
+  },
+  {
+    "Doctor Name": "Dr. Suresh Gupta",
+    "Email": "suresh.gupta@xyzhospital.com",
+    "Phone Number": "9876543222",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "05:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Sunil Kumar",
+    "Summary": "Severe allergic reaction"
+  },
+  {
+    "Doctor Name": "Dr. Pooja Verma",
+    "Email": "pooja.verma@xyzhospital.com",
+    "Phone Number": "9876543221",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "09:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Vivek Kapoor",
+    "Summary": "Hit by a vehicle accident"
+  },
+  {
+    "Doctor Name": "Dr. Rohan Kapoor",
+    "Email": "rohan.kapoor@xyzhospital.com",
+    "Phone Number": "9876543212",
+    "Ward Name": "General Ward",
+    "Available Time": "12:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Smita Singh",
+    "Summary": "Nausea and vomiting"
+  },
+  {
+    "Doctor Name": "Dr. Nisha Malhotra",
+    "Email": "nisha.malhotra@xyzhospital.com",
+    "Phone Number": "9876543223",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "08:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Vijayalakshmi Kapoor",
+    "Summary": "Stab wound"
+  },
+  {
+    "Doctor Name": "Dr. Priya Mehta",
+    "Email": "priya.mehta@xyzhospital.com",
+    "Phone Number": "9876543211",
+    "Ward Name": "General Ward",
+    "Available Time": "12:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Veena Anand",
+    "Summary": "Eye irritation"
+  },
+  {
+    "Doctor Name": "Dr. Deepak Sinha",
+    "Email": "deepak.sinha@xyzhospital.com",
+    "Phone Number": "9876543228",
+    "Ward Name": "Orthopedics",
+    "Available Time": "03:00 PM",
+    "Status": "Free",
+    "Patient Name": "Archana Sharma",
+    "Summary": "Wrist fracture from fall"
+  },
+  {
+    "Doctor Name": "Dr. Priya Mehta",
+    "Email": "priya.mehta@xyzhospital.com",
+    "Phone Number": "9876543211",
+    "Ward Name": "General Ward",
+    "Available Time": "12:00 PM",
+    "Status": "Free",
+    "Patient Name": "Saraswati Sinha",
+    "Summary": "Constipation"
+  },
+  {
+    "Doctor Name": "Dr. Kavita Anand",
+    "Email": "kavita.anand@xyzhospital.com",
+    "Phone Number": "9876543224",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "03:00 PM",
+    "Status": "Free",
+    "Patient Name": "Bharati Mehta",
+    "Summary": "Suicidal ideation"
+  },
+  {
+    "Doctor Name": "Dr. Sanjay Pillai",
+    "Email": "sanjay.pillai@xyzhospital.com",
+    "Phone Number": "9876543225",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "03:00 PM",
+    "Status": "Free",
+    "Patient Name": "Mohan Chopra",
+    "Summary": "Dissociative identity disorder"
+  },
+  {
+    "Doctor Name": "Dr. Vikram Bose",
+    "Email": "vikram.bose@xyzhospital.com",
+    "Phone Number": "9876543216",
+    "Ward Name": "General Ward",
+    "Available Time": "12:00 PM",
+    "Status": "Free",
+    "Patient Name": "Madhuri Malhotra",
+    "Summary": "Diarrhea"
+  },
+  {
+    "Doctor Name": "Dr. Nisha Malhotra",
+    "Email": "nisha.malhotra@xyzhospital.com",
+    "Phone Number": "9876543223",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "10:00 AM",
+    "Status": "Free",
+    "Patient Name": "Nisha Sharma",
+    "Summary": "High-speed crash"
+  },
+  {
+    "Doctor Name": "Dr. Kavita Anand",
+    "Email": "kavita.anand@xyzhospital.com",
+    "Phone Number": "9876543224",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "04:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Seema Reddy",
+    "Summary": "Eating disorder"
+  },
+  {
+    "Doctor Name": "Dr. Divya Reddy",
+    "Email": "divya.reddy@xyzhospital.com",
+    "Phone Number": "9876543217",
+    "Ward Name": "General Ward",
+    "Available Time": "01:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Arun Patel",
+    "Summary": "Sore throat"
+  },
+  {
+    "Doctor Name": "Dr. Rohan Kapoor",
+    "Email": "rohan.kapoor@xyzhospital.com",
+    "Phone Number": "9876543212",
+    "Ward Name": "General Ward",
+    "Available Time": "01:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Savita Singh",
+    "Summary": "Mild dizziness"
+  },
+  {
+    "Doctor Name": "Dr. Rohan Kapoor",
+    "Email": "rohan.kapoor@xyzhospital.com",
+    "Phone Number": "9876543212",
+    "Ward Name": "General Ward",
+    "Available Time": "04:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Harishchandra Agarwal",
+    "Summary": "Fatigue and weakness"
+  },
+  {
+    "Doctor Name": "Dr. Kavita Anand",
+    "Email": "kavita.anand@xyzhospital.com",
+    "Phone Number": "9876543224",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "06:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Kavya Iyer",
+    "Summary": "Substance addiction withdrawal"
+  },
+  {
+    "Doctor Name": "Dr. Ananya Nair",
+    "Email": "ananya.nair@xyzhospital.com",
+    "Phone Number": "9876543215",
+    "Ward Name": "General Ward",
+    "Available Time": "06:00 PM",
+    "Status": "Free",
+    "Patient Name": "Meenakshi Iyer",
+    "Summary": "Fatigue and weakness"
+  },
+  {
+    "Doctor Name": "Dr. Priya Mehta",
+    "Email": "priya.mehta@xyzhospital.com",
+    "Phone Number": "9876543211",
+    "Ward Name": "General Ward",
+    "Available Time": "04:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Mohan Chopra",
+    "Summary": "Mild dizziness"
+  },
+  {
+    "Doctor Name": "Dr. Ritu Sharma",
+    "Email": "ritu.sharma@xyzhospital.com",
+    "Phone Number": "9876543226",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "03:00 PM",
+    "Status": "Free",
+    "Patient Name": "Varsha Reddy",
+    "Summary": "Social anxiety disorder"
+  },
+  {
+    "Doctor Name": "Dr. Sanjay Pillai",
+    "Email": "sanjay.pillai@xyzhospital.com",
+    "Phone Number": "9876543225",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "10:00 AM",
+    "Status": "Free",
+    "Patient Name": "Dinesh Agarwal",
+    "Summary": "Panic attacks daily"
+  },
+  {
+    "Doctor Name": "Dr. Vikram Bose",
+    "Email": "vikram.bose@xyzhospital.com",
+    "Phone Number": "9876543216",
+    "Ward Name": "General Ward",
+    "Available Time": "02:00 PM",
+    "Status": "Free",
+    "Patient Name": "",
+    "Summary": ""
+  },
+  {
+    "Doctor Name": "Dr. Suresh Gupta",
+    "Email": "suresh.gupta@xyzhospital.com",
+    "Phone Number": "9876543222",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "01:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Kamla Mehta",
+    "Summary": "Electric shock"
+  },
+  {
+    "Doctor Name": "Dr. Ritu Sharma",
+    "Email": "ritu.sharma@xyzhospital.com",
+    "Phone Number": "9876543226",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "10:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Shanti Iyer",
+    "Summary": "Autism \u2014 behavioral crisis"
+  },
+  {
+    "Doctor Name": "Dr. Vikram Bose",
+    "Email": "vikram.bose@xyzhospital.com",
+    "Phone Number": "9876543216",
+    "Ward Name": "General Ward",
+    "Available Time": "12:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Omprakash Verma",
+    "Summary": "Persistent cough"
+  },
+  {
+    "Doctor Name": "Dr. Rohan Kapoor",
+    "Email": "rohan.kapoor@xyzhospital.com",
+    "Phone Number": "9876543212",
+    "Ward Name": "General Ward",
+    "Available Time": "06:00 PM",
+    "Status": "Free",
+    "Patient Name": "Rina Reddy",
+    "Summary": "Runny nose and cold"
+  },
+  {
+    "Doctor Name": "Dr. Vikram Bose",
+    "Email": "vikram.bose@xyzhospital.com",
+    "Phone Number": "9876543216",
+    "Ward Name": "General Ward",
+    "Available Time": "09:00 AM",
+    "Status": "Free",
+    "Patient Name": "Archana Sharma",
+    "Summary": "Body ache"
+  },
+  {
+    "Doctor Name": "Dr. Manish Agarwal",
+    "Email": "manish.agarwal@xyzhospital.com",
+    "Phone Number": "9876543227",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "01:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Chitralekha Anand",
+    "Summary": "Dissociative identity disorder"
+  },
+  {
+    "Doctor Name": "Dr. Priya Mehta",
+    "Email": "priya.mehta@xyzhospital.com",
+    "Phone Number": "9876543211",
+    "Ward Name": "General Ward",
+    "Available Time": "04:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Swati Sharma",
+    "Summary": "Body ache"
+  },
+  {
+    "Doctor Name": "Dr. Kavita Anand",
+    "Email": "kavita.anand@xyzhospital.com",
+    "Phone Number": "9876543224",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "10:00 AM",
+    "Status": "Free",
+    "Patient Name": "Kamini Sinha",
+    "Summary": "Grief and acute stress"
+  },
+  {
+    "Doctor Name": "Dr. Vikram Bose",
+    "Email": "vikram.bose@xyzhospital.com",
+    "Phone Number": "9876543216",
+    "Ward Name": "General Ward",
+    "Available Time": "09:00 AM",
+    "Status": "Free",
+    "Patient Name": "Sita Mehta",
+    "Summary": "Constipation"
+  },
+  {
+    "Doctor Name": "Dr. Ritu Sharma",
+    "Email": "ritu.sharma@xyzhospital.com",
+    "Phone Number": "9876543226",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "03:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Devendra Patel",
+    "Summary": "Severe depression episodes"
+  },
+  {
+    "Doctor Name": "Dr. Rohan Kapoor",
+    "Email": "rohan.kapoor@xyzhospital.com",
+    "Phone Number": "9876543212",
+    "Ward Name": "General Ward",
+    "Available Time": "02:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Arjun Kumar",
+    "Summary": "Runny nose and cold"
+  },
+  {
+    "Doctor Name": "Dr. Rahul Joshi",
+    "Email": "rahul.joshi@xyzhospital.com",
+    "Phone Number": "9876543218",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "07:00 PM",
+    "Status": "Free",
+    "Patient Name": "Ranjit Agarwal",
+    "Summary": "Gunshot wound"
+  },
+  {
+    "Doctor Name": "Dr. Meera Singh",
+    "Email": "meera.singh@xyzhospital.com",
+    "Phone Number": "9876543219",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "08:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Asha Joshi",
+    "Summary": "High-speed crash"
+  },
+  {
+    "Doctor Name": "Dr. Priya Mehta",
+    "Email": "priya.mehta@xyzhospital.com",
+    "Phone Number": "9876543211",
+    "Ward Name": "General Ward",
+    "Available Time": "07:00 PM",
+    "Status": "Free",
+    "Patient Name": "Chandrakant Bose",
+    "Summary": "Fatigue and weakness"
+  },
+  {
+    "Doctor Name": "Dr. Sanjay Pillai",
+    "Email": "sanjay.pillai@xyzhospital.com",
+    "Phone Number": "9876543225",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "09:00 AM",
+    "Status": "Free",
+    "Patient Name": "Pallavi Joshi",
+    "Summary": "Substance addiction withdrawal"
+  },
+  {
+    "Doctor Name": "Dr. Aditya Kumar",
+    "Email": "aditya.kumar@xyzhospital.com",
+    "Phone Number": "9876543220",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "05:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Nandita Mehta",
+    "Summary": "Suspected drug overdose"
+  },
+  {
+    "Doctor Name": "Dr. Rahul Joshi",
+    "Email": "rahul.joshi@xyzhospital.com",
+    "Phone Number": "9876543218",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "03:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Naresh Verma",
+    "Summary": "High-speed crash"
+  },
+  {
+    "Doctor Name": "Dr. Aditya Kumar",
+    "Email": "aditya.kumar@xyzhospital.com",
+    "Phone Number": "9876543220",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "10:00 AM",
+    "Status": "Free",
+    "Patient Name": "Pankaj Kumar",
+    "Summary": "Gunshot wound"
+  },
+  {
+    "Doctor Name": "Dr. Kavita Anand",
+    "Email": "kavita.anand@xyzhospital.com",
+    "Phone Number": "9876543224",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "05:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Smita Singh",
+    "Summary": "Substance addiction withdrawal"
+  },
+  {
+    "Doctor Name": "Dr. Kavita Anand",
+    "Email": "kavita.anand@xyzhospital.com",
+    "Phone Number": "9876543224",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "08:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Saraswati Sinha",
+    "Summary": "Obsessive compulsive disorder"
+  },
+  {
+    "Doctor Name": "Dr. Arjun Sharma",
+    "Email": "arjun.sharma@xyzhospital.com",
+    "Phone Number": "9876543210",
+    "Ward Name": "General Ward",
+    "Available Time": "11:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Rekha Iyer",
+    "Summary": "Runny nose and cold"
+  },
+  {
+    "Doctor Name": "Dr. Sunita Chopra",
+    "Email": "sunita.chopra@xyzhospital.com",
+    "Phone Number": "9876543229",
+    "Ward Name": "Orthopedics",
+    "Available Time": "08:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Bharat Patel",
+    "Summary": "Wrist fracture from fall"
+  },
+  {
+    "Doctor Name": "Dr. Ritu Sharma",
+    "Email": "ritu.sharma@xyzhospital.com",
+    "Phone Number": "9876543226",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "01:00 PM",
+    "Status": "Free",
+    "Patient Name": "Akash Pillai",
+    "Summary": "Severe depression episodes"
+  },
+  {
+    "Doctor Name": "Dr. Aditya Kumar",
+    "Email": "aditya.kumar@xyzhospital.com",
+    "Phone Number": "9876543220",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "09:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Aarti Joshi",
+    "Summary": "Severe breathing difficulty"
+  },
+  {
+    "Doctor Name": "Dr. Ritu Sharma",
+    "Email": "ritu.sharma@xyzhospital.com",
+    "Phone Number": "9876543226",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "11:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Manjula Singh",
+    "Summary": "Bipolar disorder \u2014 manic phase"
+  },
+  {
+    "Doctor Name": "Dr. Kavita Anand",
+    "Email": "kavita.anand@xyzhospital.com",
+    "Phone Number": "9876543224",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "04:00 PM",
+    "Status": "Free",
+    "Patient Name": "",
+    "Summary": ""
+  },
+  {
+    "Doctor Name": "Dr. Pooja Verma",
+    "Email": "pooja.verma@xyzhospital.com",
+    "Phone Number": "9876543221",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "05:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Vinod Chopra",
+    "Summary": "Stroke \u2014 sudden numbness"
+  },
+  {
+    "Doctor Name": "Dr. Ritu Sharma",
+    "Email": "ritu.sharma@xyzhospital.com",
+    "Phone Number": "9876543226",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "11:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Meera Joshi",
+    "Summary": "Paranoid delusions"
+  },
+  {
+    "Doctor Name": "Dr. Sunita Chopra",
+    "Email": "sunita.chopra@xyzhospital.com",
+    "Phone Number": "9876543229",
+    "Ward Name": "Orthopedics",
+    "Available Time": "08:00 AM",
+    "Status": "Free",
+    "Patient Name": "Priti Joshi",
+    "Summary": "Rotator cuff injury"
+  },
+  {
+    "Doctor Name": "Dr. Aditya Kumar",
+    "Email": "aditya.kumar@xyzhospital.com",
+    "Phone Number": "9876543220",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "08:00 AM",
+    "Status": "Consulting",
+    "Patient Name": "Shalini Sinha",
+    "Summary": "Hit by a vehicle accident"
+  },
+  {
+    "Doctor Name": "Dr. Nisha Malhotra",
+    "Email": "nisha.malhotra@xyzhospital.com",
+    "Phone Number": "9876543223",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "12:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Ananya Nair",
+    "Summary": "Severe breathing difficulty"
+  },
+  {
+    "Doctor Name": "Dr. Kavita Anand",
+    "Email": "kavita.anand@xyzhospital.com",
+    "Phone Number": "9876543224",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "02:00 PM",
+    "Status": "Free",
+    "Patient Name": "Sita Mehta",
+    "Summary": "Substance addiction withdrawal"
+  },
+  {
+    "Doctor Name": "Dr. Divya Reddy",
+    "Email": "divya.reddy@xyzhospital.com",
+    "Phone Number": "9876543217",
+    "Ward Name": "General Ward",
+    "Available Time": "10:00 AM",
+    "Status": "Free",
+    "Patient Name": "",
+    "Summary": ""
+  },
+  {
+    "Doctor Name": "Dr. Meera Singh",
+    "Email": "meera.singh@xyzhospital.com",
+    "Phone Number": "9876543219",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "05:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Smita Singh",
+    "Summary": "Electric shock"
+  },
+  {
+    "Doctor Name": "Dr. Vikram Bose",
+    "Email": "vikram.bose@xyzhospital.com",
+    "Phone Number": "9876543216",
+    "Ward Name": "General Ward",
+    "Available Time": "10:00 AM",
+    "Status": "Free",
+    "Patient Name": "Kamini Sinha",
+    "Summary": "Urinary tract infection"
+  },
+  {
+    "Doctor Name": "Dr. Ananya Nair",
+    "Email": "ananya.nair@xyzhospital.com",
+    "Phone Number": "9876543215",
+    "Ward Name": "General Ward",
+    "Available Time": "05:00 PM",
+    "Status": "Free",
+    "Patient Name": "Sita Mehta",
+    "Summary": "Runny nose and cold"
+  },
+  {
+    "Doctor Name": "Dr. Rahul Joshi",
+    "Email": "rahul.joshi@xyzhospital.com",
+    "Phone Number": "9876543218",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "03:00 PM",
+    "Status": "Free",
+    "Patient Name": "",
+    "Summary": ""
+  },
+  {
+    "Doctor Name": "Dr. Pooja Verma",
+    "Email": "pooja.verma@xyzhospital.com",
+    "Phone Number": "9876543221",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "09:00 AM",
+    "Status": "Free",
+    "Patient Name": "Priti Joshi",
+    "Summary": "Stroke \u2014 sudden numbness"
+  },
+  {
+    "Doctor Name": "Dr. Aditya Kumar",
+    "Email": "aditya.kumar@xyzhospital.com",
+    "Phone Number": "9876543220",
+    "Ward Name": "Emergency Ward",
+    "Available Time": "04:00 PM",
+    "Status": "Free",
+    "Patient Name": "Shalini Sinha",
+    "Summary": "Hit by a vehicle accident"
+  },
+  {
+    "Doctor Name": "Dr. Sanjay Pillai",
+    "Email": "sanjay.pillai@xyzhospital.com",
+    "Phone Number": "9876543225",
+    "Ward Name": "Mental Health Ward",
+    "Available Time": "11:00 AM",
+    "Status": "Free",
+    "Patient Name": "",
+    "Summary": ""
+  },
+  {
+    "Doctor Name": "Dr. Sunita Chopra",
+    "Email": "sunita.chopra@xyzhospital.com",
+    "Phone Number": "9876543229",
+    "Ward Name": "Orthopedics",
+    "Available Time": "02:00 PM",
+    "Status": "Free",
+    "Patient Name": "Kiran Bose",
+    "Summary": "Fractured tibia"
+  },
+  {
+    "Doctor Name": "Dr. Ananya Nair",
+    "Email": "ananya.nair@xyzhospital.com",
+    "Phone Number": "9876543215",
+    "Ward Name": "General Ward",
+    "Available Time": "07:00 PM",
+    "Status": "Consulting",
+    "Patient Name": "Prem Verma",
+    "Summary": "Mild dizziness"
+  }
+]

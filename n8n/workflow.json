@@ -1,0 +1,270 @@
+{
+  "name": "MediRoute Hospital Routing (Webhook)",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "triage",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1.1,
+      "position": [-300, 0],
+      "id": "webhook-trigger",
+      "name": "Webhook Trigger"
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "gpt-4o-mini",
+          "mode": "list",
+          "cachedResultName": "GPT-4O-MINI"
+        },
+        "responses": {
+          "values": [
+            {
+              "role": "system",
+              "content": "=You are a hospital receptionist triage agent.\n\nPatient info:\nName: {{ $json.body.context.name }}\nAge: {{ $json.body.context.age }}\nSymptoms: {{ $json.body.context.symptoms }}\n\nAssign to exactly ONE ward. Rules:\n\nEmergency Ward — anything involving: accidents, injuries, cuts, wounds, lacerations, bleeding, burns, fractures, broken bones, falls, head injuries, chest pain, heart attack, stroke, breathing problems, choking, seizures, unconsciousness, poisoning, overdose, drowning, electric shock, gunshot, stab wound\n\nMental Health Ward — depression, anxiety, panic attacks, trauma, PTSD, hallucinations, suicidal thoughts, psychosis, bipolar, schizophrenia, eating disorders\n\nGeneral Ward — fever, cold, cough, sore throat, headache, nausea, mild stomach pain, flu, body ache, diarrhea, rash, ear pain, eye irritation, runny nose\n\nOutput ONLY the ward name, nothing else:\nGeneral Ward\nEmergency Ward\nMental Health Ward"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 2.1,
+      "position": [-60, 0],
+      "id": "ai-classifier",
+      "name": "AI Ward Classifier",
+      "credentials": {
+        "openAiApi": {
+          "id": "jKOkehJxEciWeyxk",
+          "name": "n8n free OpenAI API credits"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify({ ward: $json.output[0].content[0].text.trim(), is_complete: true }) }}"
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [200, 0],
+      "id": "respond-webhook",
+      "name": "Respond to Frontend"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": { "caseSensitive": false, "typeValidation": "strict" },
+          "conditions": [
+            {
+              "id": "cond-general",
+              "leftValue": "={{ $('AI Ward Classifier').item.json.output[0].content[0].text.trim() }}",
+              "rightValue": "General Ward",
+              "operator": { "type": "string", "operation": "equals" }
+            }
+          ],
+          "combinator": "or"
+        }
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [460, 0],
+      "id": "if-general",
+      "name": "Is General Ward?"
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1ZDxhHpmoA_8kTYUKxKH0XzLYulQkzuQTdBnhnOE-Tns",
+          "mode": "list",
+          "cachedResultName": "Hospital dummy data",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1ZDxhHpmoA_8kTYUKxKH0XzLYulQkzuQTdBnhnOE-Tns/edit?usp=drivesdk"
+        },
+        "sheetName": { "__rl": true, "value": "gid=0", "mode": "list", "cachedResultName": "Sheet1" },
+        "filtersUI": {
+          "values": [
+            { "lookupColumn": "Ward Name", "lookupValue": "General Ward" },
+            { "lookupColumn": "Status", "lookupValue": "Free" }
+          ]
+        },
+        "options": { "returnFirstMatch": true }
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [700, -180],
+      "id": "get-general-doctor",
+      "name": "Get General Doctor",
+      "credentials": {
+        "googleSheetsOAuth2Api": { "id": "PjiNzX3OAX8EfyZ0", "name": "Google Sheets OAuth2 API" }
+      }
+    },
+    {
+      "parameters": {
+        "sendTo": "={{ $json.Email }}",
+        "subject": "=\ud83c\udfe5 New Patient — {{ $('Webhook Trigger').item.json.body.context.name }}",
+        "message": "=Dear Dr. {{ $json['Doctor Name'] }},\n\nYou have a new patient.\n\n\ud83d\udc64 Name: {{ $('Webhook Trigger').item.json.body.context.name }}\n\ud83c\udf82 Age: {{ $('Webhook Trigger').item.json.body.context.age }}\n\ud83d\udce7 Email: {{ $('Webhook Trigger').item.json.body.context.email }}\n\ud83d\udccc Chief Complaint: {{ $('Webhook Trigger').item.json.body.context.symptoms }}\n\ud83c\udfe5 Ward: General Ward\n\nPlease prepare for consultation.\n\nMediRoute AI System",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.2,
+      "position": [940, -180],
+      "id": "email-general",
+      "name": "Email General Doctor",
+      "credentials": {
+        "gmailOAuth2": { "id": "wDhJTpFgC9O957LJ", "name": "Gmail OAuth2 API" }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1ZDxhHpmoA_8kTYUKxKH0XzLYulQkzuQTdBnhnOE-Tns",
+          "mode": "list",
+          "cachedResultName": "Hospital dummy data",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1ZDxhHpmoA_8kTYUKxKH0XzLYulQkzuQTdBnhnOE-Tns/edit?usp=drivesdk"
+        },
+        "sheetName": { "__rl": true, "value": "gid=0", "mode": "list", "cachedResultName": "Sheet1" },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Doctor Name": "={{ $('Get General Doctor').item.json['Doctor Name'] }}",
+            "Ward Name": "General Ward",
+            "Status": "Consulting",
+            "Patient Name": "={{ $('Webhook Trigger').item.json.body.context.name }}",
+            "Summary": "={{ $('Webhook Trigger').item.json.body.context.symptoms }}"
+          }
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [1180, -180],
+      "id": "append-general-sheet",
+      "name": "Append General Patient",
+      "credentials": {
+        "googleSheetsOAuth2Api": { "id": "PjiNzX3OAX8EfyZ0", "name": "Google Sheets OAuth2 API" }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": { "caseSensitive": false, "typeValidation": "strict" },
+          "conditions": [
+            {
+              "id": "cond-emergency",
+              "leftValue": "={{ $('AI Ward Classifier').item.json.output[0].content[0].text.trim() }}",
+              "rightValue": "Emergency Ward",
+              "operator": { "type": "string", "operation": "equals" }
+            }
+          ],
+          "combinator": "or"
+        }
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [700, 60],
+      "id": "if-emergency",
+      "name": "Is Emergency Ward?"
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1ZDxhHpmoA_8kTYUKxKH0XzLYulQkzuQTdBnhnOE-Tns",
+          "mode": "list",
+          "cachedResultName": "Hospital dummy data",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1ZDxhHpmoA_8kTYUKxKH0XzLYulQkzuQTdBnhnOE-Tns/edit?usp=drivesdk"
+        },
+        "sheetName": { "__rl": true, "value": "gid=0", "mode": "list", "cachedResultName": "Sheet1" },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Ward Name": "Emergency Ward",
+            "Status": "EMERGENCY",
+            "Patient Name": "={{ $('Webhook Trigger').item.json.body.context.name }}",
+            "Summary": "={{ $('Webhook Trigger').item.json.body.context.symptoms }}"
+          }
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [940, 60],
+      "id": "append-emergency-sheet",
+      "name": "Append Emergency Patient",
+      "credentials": {
+        "googleSheetsOAuth2Api": { "id": "PjiNzX3OAX8EfyZ0", "name": "Google Sheets OAuth2 API" }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1ZDxhHpmoA_8kTYUKxKH0XzLYulQkzuQTdBnhnOE-Tns",
+          "mode": "list",
+          "cachedResultName": "Hospital dummy data",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1ZDxhHpmoA_8kTYUKxKH0XzLYulQkzuQTdBnhnOE-Tns/edit?usp=drivesdk"
+        },
+        "sheetName": { "__rl": true, "value": "gid=0", "mode": "list", "cachedResultName": "Sheet1" },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Ward Name": "Mental Health Ward",
+            "Status": "Consulting",
+            "Patient Name": "={{ $('Webhook Trigger').item.json.body.context.name }}",
+            "Summary": "={{ $('Webhook Trigger').item.json.body.context.symptoms }}"
+          }
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [940, 200],
+      "id": "append-mental-sheet",
+      "name": "Append Mental Health Patient",
+      "credentials": {
+        "googleSheetsOAuth2Api": { "id": "PjiNzX3OAX8EfyZ0", "name": "Google Sheets OAuth2 API" }
+      }
+    }
+  ],
+  "connections": {
+    "Webhook Trigger": {
+      "main": [[{ "node": "AI Ward Classifier", "type": "main", "index": 0 }]]
+    },
+    "AI Ward Classifier": {
+      "main": [[
+        { "node": "Respond to Frontend", "type": "main", "index": 0 },
+        { "node": "Is General Ward?", "type": "main", "index": 0 }
+      ]]
+    },
+    "Is General Ward?": {
+      "main": [
+        [{ "node": "Get General Doctor", "type": "main", "index": 0 }],
+        [{ "node": "Is Emergency Ward?", "type": "main", "index": 0 }]
+      ]
+    },
+    "Get General Doctor": {
+      "main": [[{ "node": "Email General Doctor", "type": "main", "index": 0 }]]
+    },
+    "Email General Doctor": {
+      "main": [[{ "node": "Append General Patient", "type": "main", "index": 0 }]]
+    },
+    "Is Emergency Ward?": {
+      "main": [
+        [{ "node": "Append Emergency Patient", "type": "main", "index": 0 }],
+        [{ "node": "Append Mental Health Patient", "type": "main", "index": 0 }]
+      ]
+    }
+  },
+  "active": false,
+  "settings": { "executionOrder": "v1" },
+  "meta": { "templateCredsSetupCompleted": false }
+}

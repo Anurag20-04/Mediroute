@@ -1,0 +1,206 @@
+Doctor Name,Email,Phone Number,Ward Name,Available Time,Status,Patient Name,Summary
+Dr. Aditya Kumar,aditya.kumar@xyzhospital.com,9876543220,Emergency Ward,02:00 PM,Consulting,Parvati Sharma,Fractured skull from fall
+Dr. Nisha Malhotra,nisha.malhotra@xyzhospital.com,9876543223,Emergency Ward,02:00 PM,Consulting,Dinesh Agarwal,Seizure episode
+Dr. Nisha Malhotra,nisha.malhotra@xyzhospital.com,9876543223,Emergency Ward,03:00 PM,Free,Archana Sharma,Electric shock
+Dr. Ananya Nair,ananya.nair@xyzhospital.com,9876543215,General Ward,11:00 AM,Free,,
+Dr. Ritu Sharma,ritu.sharma@xyzhospital.com,9876543226,Mental Health Ward,07:00 PM,Free,,
+Dr. Arjun Sharma,arjun.sharma@xyzhospital.com,9876543210,General Ward,07:00 PM,Consulting,Balram Agarwal,Fever and chills
+Dr. Priya Mehta,priya.mehta@xyzhospital.com,9876543211,General Ward,11:00 AM,Consulting,Savita Singh,Urinary tract infection
+Dr. Arjun Sharma,arjun.sharma@xyzhospital.com,9876543210,General Ward,04:00 PM,Consulting,Rohan Mehta,Constipation
+Dr. Deepak Sinha,deepak.sinha@xyzhospital.com,9876543228,Orthopedics,10:00 AM,Consulting,Trideep Iyer,Rotator cuff injury
+Dr. Sanjay Pillai,sanjay.pillai@xyzhospital.com,9876543225,Mental Health Ward,08:00 AM,Consulting,Ranjit Agarwal,Severe depression episodes
+Dr. Vikram Bose,vikram.bose@xyzhospital.com,9876543216,General Ward,04:00 PM,Consulting,Saraswati Sinha,Diarrhea
+Dr. Vikram Bose,vikram.bose@xyzhospital.com,9876543216,General Ward,05:00 PM,Consulting,Meera Joshi,Fever and chills
+Dr. Nisha Malhotra,nisha.malhotra@xyzhospital.com,9876543223,Emergency Ward,09:00 AM,Free,Pallavi Joshi,Heart attack symptoms
+Dr. Sanjay Pillai,sanjay.pillai@xyzhospital.com,9876543225,Mental Health Ward,08:00 AM,Consulting,Rina Reddy,Psychosis episode
+Dr. Divya Reddy,divya.reddy@xyzhospital.com,9876543217,General Ward,01:00 PM,Consulting,Suresh Verma,Constipation
+Dr. Divya Reddy,divya.reddy@xyzhospital.com,9876543217,General Ward,06:00 PM,Free,Arjun Kumar,Nausea and vomiting
+Dr. Ritu Sharma,ritu.sharma@xyzhospital.com,9876543226,Mental Health Ward,10:00 AM,Consulting,Leela Sinha,Insomnia and severe stress
+Dr. Arjun Sharma,arjun.sharma@xyzhospital.com,9876543210,General Ward,12:00 PM,Free,Trilochan Pillai,Persistent cough
+Dr. Sneha Iyer,sneha.iyer@xyzhospital.com,9876543213,General Ward,10:00 AM,Consulting,Savita Singh,Sore throat
+Dr. Suresh Gupta,suresh.gupta@xyzhospital.com,9876543222,Emergency Ward,05:00 PM,Free,,
+Dr. Ritu Sharma,ritu.sharma@xyzhospital.com,9876543226,Mental Health Ward,03:00 PM,Consulting,Gopinath Chopra,Self-harm tendencies
+Dr. Rohan Kapoor,rohan.kapoor@xyzhospital.com,9876543212,General Ward,09:00 AM,Free,Swati Sharma,Fever and chills
+Dr. Vikram Bose,vikram.bose@xyzhospital.com,9876543216,General Ward,09:00 AM,Free,Nisha Sharma,Toothache
+Dr. Meera Singh,meera.singh@xyzhospital.com,9876543219,Emergency Ward,04:00 PM,Free,Bharati Mehta,Choking on food
+Dr. Ananya Nair,ananya.nair@xyzhospital.com,9876543215,General Ward,01:00 PM,Consulting,Mahesh Kapoor,Body ache
+Dr. Sunita Chopra,sunita.chopra@xyzhospital.com,9876543229,Orthopedics,05:00 PM,Free,,
+Dr. Ritu Sharma,ritu.sharma@xyzhospital.com,9876543226,Mental Health Ward,10:00 AM,Consulting,Alok Chopra,Post-traumatic stress disorder
+Dr. Pooja Verma,pooja.verma@xyzhospital.com,9876543221,Emergency Ward,04:00 PM,Free,Sanjay Gupta,Gunshot wound
+Dr. Nisha Malhotra,nisha.malhotra@xyzhospital.com,9876543223,Emergency Ward,03:00 PM,Free,,
+Dr. Suresh Gupta,suresh.gupta@xyzhospital.com,9876543222,Emergency Ward,09:00 AM,Consulting,Amitabh Bose,Compound fracture
+Dr. Priya Mehta,priya.mehta@xyzhospital.com,9876543211,General Ward,08:00 AM,Consulting,Vinod Chopra,Loss of appetite
+Dr. Arjun Sharma,arjun.sharma@xyzhospital.com,9876543210,General Ward,04:00 PM,Consulting,Mohan Chopra,Urinary tract infection
+Dr. Vikram Bose,vikram.bose@xyzhospital.com,9876543216,General Ward,06:00 PM,Free,Sunita Anand,Loss of appetite
+Dr. Manish Agarwal,manish.agarwal@xyzhospital.com,9876543227,Mental Health Ward,12:00 PM,Consulting,Anjali Iyer,Autism — behavioral crisis
+Dr. Rohan Kapoor,rohan.kapoor@xyzhospital.com,9876543212,General Ward,06:00 PM,Free,Nandita Mehta,Mild dizziness
+Dr. Manish Agarwal,manish.agarwal@xyzhospital.com,9876543227,Mental Health Ward,04:00 PM,Free,Girish Gupta,Psychosis episode
+Dr. Deepak Sinha,deepak.sinha@xyzhospital.com,9876543228,Orthopedics,03:00 PM,Consulting,Amitabh Bose,Knee ligament tear
+Dr. Vikram Bose,vikram.bose@xyzhospital.com,9876543216,General Ward,12:00 PM,Free,Mamta Malhotra,Skin rash
+Dr. Sunita Chopra,sunita.chopra@xyzhospital.com,9876543229,Orthopedics,03:00 PM,Consulting,Leela Sinha,Torn ACL
+Dr. Rohan Kapoor,rohan.kapoor@xyzhospital.com,9876543212,General Ward,11:00 AM,Consulting,Pooja Malhotra,Mild dizziness
+Dr. Ananya Nair,ananya.nair@xyzhospital.com,9876543215,General Ward,08:00 AM,Free,Ramesh Agarwal,Persistent cough
+Dr. Ananya Nair,ananya.nair@xyzhospital.com,9876543215,General Ward,07:00 PM,Consulting,Devendra Patel,Body ache
+Dr. Arjun Sharma,arjun.sharma@xyzhospital.com,9876543210,General Ward,06:00 PM,Free,,
+Dr. Sneha Iyer,sneha.iyer@xyzhospital.com,9876543213,General Ward,01:00 PM,Consulting,Kiran Bose,Loss of appetite
+Dr. Pooja Verma,pooja.verma@xyzhospital.com,9876543221,Emergency Ward,03:00 PM,Consulting,Akash Pillai,Severe blood loss from wound
+Dr. Sanjay Pillai,sanjay.pillai@xyzhospital.com,9876543225,Mental Health Ward,09:00 AM,Consulting,Vijayshree Mehta,Autism — behavioral crisis
+Dr. Sunita Chopra,sunita.chopra@xyzhospital.com,9876543229,Orthopedics,12:00 PM,Free,Devendra Patel,Hip replacement follow-up
+Dr. Aditya Kumar,aditya.kumar@xyzhospital.com,9876543220,Emergency Ward,11:00 AM,Consulting,Smita Singh,Severe breathing difficulty
+Dr. Sanjay Pillai,sanjay.pillai@xyzhospital.com,9876543225,Mental Health Ward,10:00 AM,Free,Dev Bose,Obsessive compulsive disorder
+Dr. Deepak Sinha,deepak.sinha@xyzhospital.com,9876543228,Orthopedics,06:00 PM,Free,Shalini Sinha,Wrist fracture from fall
+Dr. Vikram Bose,vikram.bose@xyzhospital.com,9876543216,General Ward,02:00 PM,Consulting,Nandita Mehta,Stomach pain
+Dr. Rohan Kapoor,rohan.kapoor@xyzhospital.com,9876543212,General Ward,08:00 AM,Consulting,Harishchandra Agarwal,Urinary tract infection
+Dr. Divya Reddy,divya.reddy@xyzhospital.com,9876543217,General Ward,03:00 PM,Consulting,Smita Singh,Sore throat
+Dr. Deepak Sinha,deepak.sinha@xyzhospital.com,9876543228,Orthopedics,03:00 PM,Consulting,Sachin Patel,Knee ligament tear
+Dr. Suresh Gupta,suresh.gupta@xyzhospital.com,9876543222,Emergency Ward,08:00 AM,Consulting,Ananya Nair,Severe chest pain
+Dr. Divya Reddy,divya.reddy@xyzhospital.com,9876543217,General Ward,04:00 PM,Consulting,Alok Chopra,Eye irritation
+Dr. Arjun Sharma,arjun.sharma@xyzhospital.com,9876543210,General Ward,06:00 PM,Free,Veena Anand,Stomach pain
+Dr. Manish Agarwal,manish.agarwal@xyzhospital.com,9876543227,Mental Health Ward,09:00 AM,Free,Rina Reddy,Bipolar disorder — manic phase
+Dr. Divya Reddy,divya.reddy@xyzhospital.com,9876543217,General Ward,08:00 AM,Consulting,Arun Patel,Runny nose and cold
+Dr. Kiran Patel,kiran.patel@xyzhospital.com,9876543214,General Ward,01:00 PM,Consulting,Radha Singh,Constipation
+Dr. Kiran Patel,kiran.patel@xyzhospital.com,9876543214,General Ward,06:00 PM,Free,,
+Dr. Kavita Anand,kavita.anand@xyzhospital.com,9876543224,Mental Health Ward,05:00 PM,Free,Rekha Iyer,Severe anxiety disorder
+Dr. Meera Singh,meera.singh@xyzhospital.com,9876543219,Emergency Ward,11:00 AM,Free,Santosh Patel,High-speed crash
+Dr. Kiran Patel,kiran.patel@xyzhospital.com,9876543214,General Ward,04:00 PM,Consulting,Yash Verma,Runny nose and cold
+Dr. Sunita Chopra,sunita.chopra@xyzhospital.com,9876543229,Orthopedics,06:00 PM,Consulting,Rina Reddy,Sprained ankle
+Dr. Kavita Anand,kavita.anand@xyzhospital.com,9876543224,Mental Health Ward,10:00 AM,Consulting,Lalitha Sharma,Severe anxiety disorder
+Dr. Nisha Malhotra,nisha.malhotra@xyzhospital.com,9876543223,Emergency Ward,12:00 PM,Free,Lakshmi Singh,Seizure episode
+Dr. Meera Singh,meera.singh@xyzhospital.com,9876543219,Emergency Ward,12:00 PM,Consulting,Leela Sinha,Compound fracture
+Dr. Sanjay Pillai,sanjay.pillai@xyzhospital.com,9876543225,Mental Health Ward,12:00 PM,Consulting,Vijayalakshmi Kapoor,Substance addiction withdrawal
+Dr. Meera Singh,meera.singh@xyzhospital.com,9876543219,Emergency Ward,09:00 AM,Consulting,Jaideep Kapoor,Severe chest pain
+Dr. Divya Reddy,divya.reddy@xyzhospital.com,9876543217,General Ward,11:00 AM,Consulting,Mahesh Kapoor,Stomach pain
+Dr. Sneha Iyer,sneha.iyer@xyzhospital.com,9876543213,General Ward,02:00 PM,Consulting,Omprakash Verma,Constipation
+Dr. Rahul Joshi,rahul.joshi@xyzhospital.com,9876543218,Emergency Ward,07:00 PM,Free,Chandrakant Bose,Compound fracture
+Dr. Priya Mehta,priya.mehta@xyzhospital.com,9876543211,General Ward,04:00 PM,Free,,
+Dr. Vikram Bose,vikram.bose@xyzhospital.com,9876543216,General Ward,07:00 PM,Consulting,Yash Verma,Runny nose and cold
+Dr. Rahul Joshi,rahul.joshi@xyzhospital.com,9876543218,Emergency Ward,04:00 PM,Consulting,Archana Sharma,Drowning
+Dr. Arjun Sharma,arjun.sharma@xyzhospital.com,9876543210,General Ward,08:00 AM,Consulting,Arun Patel,Ear pain
+Dr. Priya Mehta,priya.mehta@xyzhospital.com,9876543211,General Ward,07:00 PM,Consulting,Rekha Iyer,Sore throat
+Dr. Aditya Kumar,aditya.kumar@xyzhospital.com,9876543220,Emergency Ward,06:00 PM,Free,Shweta Malhotra,Severe blood loss from wound
+Dr. Manish Agarwal,manish.agarwal@xyzhospital.com,9876543227,Mental Health Ward,06:00 PM,Free,Vijayalakshmi Kapoor,Panic attacks daily
+Dr. Suresh Gupta,suresh.gupta@xyzhospital.com,9876543222,Emergency Ward,09:00 AM,Free,Manish Chopra,Fractured skull from fall
+Dr. Nisha Malhotra,nisha.malhotra@xyzhospital.com,9876543223,Emergency Ward,10:00 AM,Consulting,Rekha Iyer,Severe breathing difficulty
+Dr. Ritu Sharma,ritu.sharma@xyzhospital.com,9876543226,Mental Health Ward,12:00 PM,Consulting,Tarun Bose,Insomnia and severe stress
+Dr. Ananya Nair,ananya.nair@xyzhospital.com,9876543215,General Ward,03:00 PM,Consulting,Sanjay Gupta,Loss of appetite
+Dr. Ananya Nair,ananya.nair@xyzhospital.com,9876543215,General Ward,10:00 AM,Consulting,Kamla Mehta,Toothache
+Dr. Arjun Sharma,arjun.sharma@xyzhospital.com,9876543210,General Ward,07:00 PM,Free,Suresh Verma,Mild headache
+Dr. Deepak Sinha,deepak.sinha@xyzhospital.com,9876543228,Orthopedics,05:00 PM,Free,Leela Sinha,Hip replacement follow-up
+Dr. Nisha Malhotra,nisha.malhotra@xyzhospital.com,9876543223,Emergency Ward,11:00 AM,Consulting,Shanti Iyer,Heart attack symptoms
+Dr. Pooja Verma,pooja.verma@xyzhospital.com,9876543221,Emergency Ward,10:00 AM,Consulting,Archana Sharma,Severe breathing difficulty
+Dr. Sanjay Pillai,sanjay.pillai@xyzhospital.com,9876543225,Mental Health Ward,07:00 PM,Consulting,Rina Reddy,Autism — behavioral crisis
+Dr. Meera Singh,meera.singh@xyzhospital.com,9876543219,Emergency Ward,06:00 PM,Consulting,Lakshmi Singh,Heart attack symptoms
+Dr. Rohan Kapoor,rohan.kapoor@xyzhospital.com,9876543212,General Ward,04:00 PM,Consulting,Nandita Mehta,Indigestion
+Dr. Pooja Verma,pooja.verma@xyzhospital.com,9876543221,Emergency Ward,09:00 AM,Consulting,Santosh Patel,Compound fracture
+Dr. Nisha Malhotra,nisha.malhotra@xyzhospital.com,9876543223,Emergency Ward,02:00 PM,Consulting,Rekha Iyer,Heart attack symptoms
+Dr. Meera Singh,meera.singh@xyzhospital.com,9876543219,Emergency Ward,06:00 PM,Consulting,Mahesh Kapoor,Severe blood loss from wound
+Dr. Suresh Gupta,suresh.gupta@xyzhospital.com,9876543222,Emergency Ward,08:00 AM,Consulting,Upendra Kumar,Electric shock
+Dr. Kavita Anand,kavita.anand@xyzhospital.com,9876543224,Mental Health Ward,04:00 PM,Consulting,Manish Chopra,Severe depression episodes
+Dr. Kavita Anand,kavita.anand@xyzhospital.com,9876543224,Mental Health Ward,01:00 PM,Consulting,Ajay Patel,Post-traumatic stress disorder
+Dr. Divya Reddy,divya.reddy@xyzhospital.com,9876543217,General Ward,06:00 PM,Consulting,Chitra Anand,Toothache
+Dr. Deepak Sinha,deepak.sinha@xyzhospital.com,9876543228,Orthopedics,01:00 PM,Free,Rina Reddy,Hip replacement follow-up
+Dr. Nisha Malhotra,nisha.malhotra@xyzhospital.com,9876543223,Emergency Ward,07:00 PM,Consulting,Pankaj Kumar,Stroke — sudden numbness
+Dr. Divya Reddy,divya.reddy@xyzhospital.com,9876543217,General Ward,07:00 PM,Consulting,Swati Sharma,Indigestion
+Dr. Deepak Sinha,deepak.sinha@xyzhospital.com,9876543228,Orthopedics,02:00 PM,Free,,
+Dr. Ritu Sharma,ritu.sharma@xyzhospital.com,9876543226,Mental Health Ward,04:00 PM,Free,Lakshmi Singh,Substance addiction withdrawal
+Dr. Priya Mehta,priya.mehta@xyzhospital.com,9876543211,General Ward,08:00 AM,Consulting,Kusum Joshi,Skin rash
+Dr. Sanjay Pillai,sanjay.pillai@xyzhospital.com,9876543225,Mental Health Ward,08:00 AM,Consulting,Priti Joshi,Eating disorder
+Dr. Manish Agarwal,manish.agarwal@xyzhospital.com,9876543227,Mental Health Ward,11:00 AM,Free,Ramesh Agarwal,Anorexia nervosa
+Dr. Aditya Kumar,aditya.kumar@xyzhospital.com,9876543220,Emergency Ward,08:00 AM,Free,Kusum Joshi,Compound fracture
+Dr. Sunita Chopra,sunita.chopra@xyzhospital.com,9876543229,Orthopedics,10:00 AM,Consulting,Yash Verma,Dislocated shoulder
+Dr. Rahul Joshi,rahul.joshi@xyzhospital.com,9876543218,Emergency Ward,08:00 AM,Consulting,Alok Chopra,Drowning
+Dr. Arjun Sharma,arjun.sharma@xyzhospital.com,9876543210,General Ward,01:00 PM,Free,Dev Bose,Sore throat
+Dr. Rohan Kapoor,rohan.kapoor@xyzhospital.com,9876543212,General Ward,07:00 PM,Free,Veena Anand,Fatigue and weakness
+Dr. Rohan Kapoor,rohan.kapoor@xyzhospital.com,9876543212,General Ward,09:00 AM,Free,Geeta Anand,Mild dizziness
+Dr. Kiran Patel,kiran.patel@xyzhospital.com,9876543214,General Ward,05:00 PM,Free,Varsha Reddy,Mild headache
+Dr. Pooja Verma,pooja.verma@xyzhospital.com,9876543221,Emergency Ward,10:00 AM,Consulting,Varsha Reddy,Burns on arm
+Dr. Sneha Iyer,sneha.iyer@xyzhospital.com,9876543213,General Ward,08:00 AM,Consulting,Trilochan Pillai,Indigestion
+Dr. Deepak Sinha,deepak.sinha@xyzhospital.com,9876543228,Orthopedics,10:00 AM,Consulting,Amitabh Bose,Arthritis flare-up
+Dr. Aditya Kumar,aditya.kumar@xyzhospital.com,9876543220,Emergency Ward,06:00 PM,Free,Kavya Iyer,Severe blood loss from wound
+Dr. Manish Agarwal,manish.agarwal@xyzhospital.com,9876543227,Mental Health Ward,10:00 AM,Consulting,Manjula Singh,Post-traumatic stress disorder
+Dr. Priya Mehta,priya.mehta@xyzhospital.com,9876543211,General Ward,04:00 PM,Free,Kamlesh Kumar,Mild dizziness
+Dr. Aditya Kumar,aditya.kumar@xyzhospital.com,9876543220,Emergency Ward,12:00 PM,Free,,
+Dr. Pooja Verma,pooja.verma@xyzhospital.com,9876543221,Emergency Ward,02:00 PM,Free,Mamta Malhotra,Severe allergic reaction
+Dr. Divya Reddy,divya.reddy@xyzhospital.com,9876543217,General Ward,10:00 AM,Free,Manjula Singh,Mild dizziness
+Dr. Kiran Patel,kiran.patel@xyzhospital.com,9876543214,General Ward,12:00 PM,Consulting,Madhuri Malhotra,Constipation
+Dr. Sanjay Pillai,sanjay.pillai@xyzhospital.com,9876543225,Mental Health Ward,10:00 AM,Consulting,Savita Singh,Substance addiction withdrawal
+Dr. Pooja Verma,pooja.verma@xyzhospital.com,9876543221,Emergency Ward,08:00 AM,Consulting,Sunil Kumar,Loss of consciousness
+Dr. Aditya Kumar,aditya.kumar@xyzhospital.com,9876543220,Emergency Ward,05:00 PM,Free,Ajay Patel,Fractured skull from fall
+Dr. Meera Singh,meera.singh@xyzhospital.com,9876543219,Emergency Ward,11:00 AM,Consulting,Radha Singh,Compound fracture
+Dr. Sanjay Pillai,sanjay.pillai@xyzhospital.com,9876543225,Mental Health Ward,10:00 AM,Consulting,Ajay Patel,Grief and acute stress
+Dr. Pooja Verma,pooja.verma@xyzhospital.com,9876543221,Emergency Ward,06:00 PM,Consulting,Manjula Singh,Electric shock
+Dr. Suresh Gupta,suresh.gupta@xyzhospital.com,9876543222,Emergency Ward,02:00 PM,Consulting,Aditya Pillai,Severe allergic reaction
+Dr. Suresh Gupta,suresh.gupta@xyzhospital.com,9876543222,Emergency Ward,03:00 PM,Consulting,Suresh Verma,Compound fracture
+Dr. Ananya Nair,ananya.nair@xyzhospital.com,9876543215,General Ward,10:00 AM,Consulting,Shobha Malhotra,Runny nose and cold
+Dr. Suresh Gupta,suresh.gupta@xyzhospital.com,9876543222,Emergency Ward,06:00 PM,Consulting,Seema Reddy,Loss of consciousness
+Dr. Manish Agarwal,manish.agarwal@xyzhospital.com,9876543227,Mental Health Ward,12:00 PM,Free,,
+Dr. Sunita Chopra,sunita.chopra@xyzhospital.com,9876543229,Orthopedics,08:00 AM,Consulting,Pallavi Joshi,Wrist fracture from fall
+Dr. Aditya Kumar,aditya.kumar@xyzhospital.com,9876543220,Emergency Ward,08:00 AM,Consulting,Savita Singh,Unconscious patient
+Dr. Manish Agarwal,manish.agarwal@xyzhospital.com,9876543227,Mental Health Ward,10:00 AM,Consulting,Nirmala Reddy,Obsessive compulsive disorder
+Dr. Rohan Kapoor,rohan.kapoor@xyzhospital.com,9876543212,General Ward,12:00 PM,Consulting,Sudha Sharma,Eye irritation
+Dr. Kavita Anand,kavita.anand@xyzhospital.com,9876543224,Mental Health Ward,08:00 AM,Consulting,Sarita Anand,Substance addiction withdrawal
+Dr. Vikram Bose,vikram.bose@xyzhospital.com,9876543216,General Ward,06:00 PM,Consulting,Diya Patel,Back pain
+Dr. Priya Mehta,priya.mehta@xyzhospital.com,9876543211,General Ward,09:00 AM,Consulting,Pramod Pillai,Mild dizziness
+Dr. Suresh Gupta,suresh.gupta@xyzhospital.com,9876543222,Emergency Ward,05:00 PM,Consulting,Sunil Kumar,Severe allergic reaction
+Dr. Pooja Verma,pooja.verma@xyzhospital.com,9876543221,Emergency Ward,09:00 AM,Consulting,Vivek Kapoor,Hit by a vehicle accident
+Dr. Rohan Kapoor,rohan.kapoor@xyzhospital.com,9876543212,General Ward,12:00 PM,Consulting,Smita Singh,Nausea and vomiting
+Dr. Nisha Malhotra,nisha.malhotra@xyzhospital.com,9876543223,Emergency Ward,08:00 AM,Consulting,Vijayalakshmi Kapoor,Stab wound
+Dr. Priya Mehta,priya.mehta@xyzhospital.com,9876543211,General Ward,12:00 PM,Consulting,Veena Anand,Eye irritation
+Dr. Deepak Sinha,deepak.sinha@xyzhospital.com,9876543228,Orthopedics,03:00 PM,Free,Archana Sharma,Wrist fracture from fall
+Dr. Priya Mehta,priya.mehta@xyzhospital.com,9876543211,General Ward,12:00 PM,Free,Saraswati Sinha,Constipation
+Dr. Kavita Anand,kavita.anand@xyzhospital.com,9876543224,Mental Health Ward,03:00 PM,Free,Bharati Mehta,Suicidal ideation
+Dr. Sanjay Pillai,sanjay.pillai@xyzhospital.com,9876543225,Mental Health Ward,03:00 PM,Free,Mohan Chopra,Dissociative identity disorder
+Dr. Vikram Bose,vikram.bose@xyzhospital.com,9876543216,General Ward,12:00 PM,Free,Madhuri Malhotra,Diarrhea
+Dr. Nisha Malhotra,nisha.malhotra@xyzhospital.com,9876543223,Emergency Ward,10:00 AM,Free,Nisha Sharma,High-speed crash
+Dr. Kavita Anand,kavita.anand@xyzhospital.com,9876543224,Mental Health Ward,04:00 PM,Consulting,Seema Reddy,Eating disorder
+Dr. Divya Reddy,divya.reddy@xyzhospital.com,9876543217,General Ward,01:00 PM,Consulting,Arun Patel,Sore throat
+Dr. Rohan Kapoor,rohan.kapoor@xyzhospital.com,9876543212,General Ward,01:00 PM,Consulting,Savita Singh,Mild dizziness
+Dr. Rohan Kapoor,rohan.kapoor@xyzhospital.com,9876543212,General Ward,04:00 PM,Consulting,Harishchandra Agarwal,Fatigue and weakness
+Dr. Kavita Anand,kavita.anand@xyzhospital.com,9876543224,Mental Health Ward,06:00 PM,Consulting,Kavya Iyer,Substance addiction withdrawal
+Dr. Ananya Nair,ananya.nair@xyzhospital.com,9876543215,General Ward,06:00 PM,Free,Meenakshi Iyer,Fatigue and weakness
+Dr. Priya Mehta,priya.mehta@xyzhospital.com,9876543211,General Ward,04:00 PM,Consulting,Mohan Chopra,Mild dizziness
+Dr. Ritu Sharma,ritu.sharma@xyzhospital.com,9876543226,Mental Health Ward,03:00 PM,Free,Varsha Reddy,Social anxiety disorder
+Dr. Sanjay Pillai,sanjay.pillai@xyzhospital.com,9876543225,Mental Health Ward,10:00 AM,Free,Dinesh Agarwal,Panic attacks daily
+Dr. Vikram Bose,vikram.bose@xyzhospital.com,9876543216,General Ward,02:00 PM,Free,,
+Dr. Suresh Gupta,suresh.gupta@xyzhospital.com,9876543222,Emergency Ward,01:00 PM,Consulting,Kamla Mehta,Electric shock
+Dr. Ritu Sharma,ritu.sharma@xyzhospital.com,9876543226,Mental Health Ward,10:00 AM,Consulting,Shanti Iyer,Autism — behavioral crisis
+Dr. Vikram Bose,vikram.bose@xyzhospital.com,9876543216,General Ward,12:00 PM,Consulting,Omprakash Verma,Persistent cough
+Dr. Rohan Kapoor,rohan.kapoor@xyzhospital.com,9876543212,General Ward,06:00 PM,Free,Rina Reddy,Runny nose and cold
+Dr. Vikram Bose,vikram.bose@xyzhospital.com,9876543216,General Ward,09:00 AM,Free,Archana Sharma,Body ache
+Dr. Manish Agarwal,manish.agarwal@xyzhospital.com,9876543227,Mental Health Ward,01:00 PM,Consulting,Chitralekha Anand,Dissociative identity disorder
+Dr. Priya Mehta,priya.mehta@xyzhospital.com,9876543211,General Ward,04:00 PM,Consulting,Swati Sharma,Body ache
+Dr. Kavita Anand,kavita.anand@xyzhospital.com,9876543224,Mental Health Ward,10:00 AM,Free,Kamini Sinha,Grief and acute stress
+Dr. Vikram Bose,vikram.bose@xyzhospital.com,9876543216,General Ward,09:00 AM,Free,Sita Mehta,Constipation
+Dr. Ritu Sharma,ritu.sharma@xyzhospital.com,9876543226,Mental Health Ward,03:00 PM,Consulting,Devendra Patel,Severe depression episodes
+Dr. Rohan Kapoor,rohan.kapoor@xyzhospital.com,9876543212,General Ward,02:00 PM,Consulting,Arjun Kumar,Runny nose and cold
+Dr. Rahul Joshi,rahul.joshi@xyzhospital.com,9876543218,Emergency Ward,07:00 PM,Free,Ranjit Agarwal,Gunshot wound
+Dr. Meera Singh,meera.singh@xyzhospital.com,9876543219,Emergency Ward,08:00 AM,Consulting,Asha Joshi,High-speed crash
+Dr. Priya Mehta,priya.mehta@xyzhospital.com,9876543211,General Ward,07:00 PM,Free,Chandrakant Bose,Fatigue and weakness
+Dr. Sanjay Pillai,sanjay.pillai@xyzhospital.com,9876543225,Mental Health Ward,09:00 AM,Free,Pallavi Joshi,Substance addiction withdrawal
+Dr. Aditya Kumar,aditya.kumar@xyzhospital.com,9876543220,Emergency Ward,05:00 PM,Consulting,Nandita Mehta,Suspected drug overdose
+Dr. Rahul Joshi,rahul.joshi@xyzhospital.com,9876543218,Emergency Ward,03:00 PM,Consulting,Naresh Verma,High-speed crash
+Dr. Aditya Kumar,aditya.kumar@xyzhospital.com,9876543220,Emergency Ward,10:00 AM,Free,Pankaj Kumar,Gunshot wound
+Dr. Kavita Anand,kavita.anand@xyzhospital.com,9876543224,Mental Health Ward,05:00 PM,Consulting,Smita Singh,Substance addiction withdrawal
+Dr. Kavita Anand,kavita.anand@xyzhospital.com,9876543224,Mental Health Ward,08:00 AM,Consulting,Saraswati Sinha,Obsessive compulsive disorder
+Dr. Arjun Sharma,arjun.sharma@xyzhospital.com,9876543210,General Ward,11:00 AM,Consulting,Rekha Iyer,Runny nose and cold
+Dr. Sunita Chopra,sunita.chopra@xyzhospital.com,9876543229,Orthopedics,08:00 AM,Consulting,Bharat Patel,Wrist fracture from fall
+Dr. Ritu Sharma,ritu.sharma@xyzhospital.com,9876543226,Mental Health Ward,01:00 PM,Free,Akash Pillai,Severe depression episodes
+Dr. Aditya Kumar,aditya.kumar@xyzhospital.com,9876543220,Emergency Ward,09:00 AM,Consulting,Aarti Joshi,Severe breathing difficulty
+Dr. Ritu Sharma,ritu.sharma@xyzhospital.com,9876543226,Mental Health Ward,11:00 AM,Consulting,Manjula Singh,Bipolar disorder — manic phase
+Dr. Kavita Anand,kavita.anand@xyzhospital.com,9876543224,Mental Health Ward,04:00 PM,Free,,
+Dr. Pooja Verma,pooja.verma@xyzhospital.com,9876543221,Emergency Ward,05:00 PM,Consulting,Vinod Chopra,Stroke — sudden numbness
+Dr. Ritu Sharma,ritu.sharma@xyzhospital.com,9876543226,Mental Health Ward,11:00 AM,Consulting,Meera Joshi,Paranoid delusions
+Dr. Sunita Chopra,sunita.chopra@xyzhospital.com,9876543229,Orthopedics,08:00 AM,Free,Priti Joshi,Rotator cuff injury
+Dr. Aditya Kumar,aditya.kumar@xyzhospital.com,9876543220,Emergency Ward,08:00 AM,Consulting,Shalini Sinha,Hit by a vehicle accident
+Dr. Nisha Malhotra,nisha.malhotra@xyzhospital.com,9876543223,Emergency Ward,12:00 PM,Consulting,Ananya Nair,Severe breathing difficulty
+Dr. Kavita Anand,kavita.anand@xyzhospital.com,9876543224,Mental Health Ward,02:00 PM,Free,Sita Mehta,Substance addiction withdrawal
+Dr. Divya Reddy,divya.reddy@xyzhospital.com,9876543217,General Ward,10:00 AM,Free,,
+Dr. Meera Singh,meera.singh@xyzhospital.com,9876543219,Emergency Ward,05:00 PM,Consulting,Smita Singh,Electric shock
+Dr. Vikram Bose,vikram.bose@xyzhospital.com,9876543216,General Ward,10:00 AM,Free,Kamini Sinha,Urinary tract infection
+Dr. Ananya Nair,ananya.nair@xyzhospital.com,9876543215,General Ward,05:00 PM,Free,Sita Mehta,Runny nose and cold
+Dr. Rahul Joshi,rahul.joshi@xyzhospital.com,9876543218,Emergency Ward,03:00 PM,Free,,
+Dr. Pooja Verma,pooja.verma@xyzhospital.com,9876543221,Emergency Ward,09:00 AM,Free,Priti Joshi,Stroke — sudden numbness
+Dr. Aditya Kumar,aditya.kumar@xyzhospital.com,9876543220,Emergency Ward,04:00 PM,Free,Shalini Sinha,Hit by a vehicle accident
+Dr. Sanjay Pillai,sanjay.pillai@xyzhospital.com,9876543225,Mental Health Ward,11:00 AM,Free,,
+Dr. Sunita Chopra,sunita.chopra@xyzhospital.com,9876543229,Orthopedics,02:00 PM,Free,Kiran Bose,Fractured tibia
+Dr. Ananya Nair,ananya.nair@xyzhospital.com,9876543215,General Ward,07:00 PM,Consulting,Prem Verma,Mild dizziness

@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: mediroute-ai-backend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: N8N_WEBHOOK_URL
+        sync: false   # Set this in the Render Dashboard
+      - key: SUPABASE_URL
+        sync: false   # Set this in the Render Dashboard
+      - key: SUPABASE_KEY
+        sync: false   # Set this in the Render Dashboard
+      - key: FRONTEND_URL
+        sync: false   # e.g. https://mediroute-ai.vercel.app

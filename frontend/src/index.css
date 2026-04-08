@@ -1,0 +1,382 @@
+
+/* ================================================================
+   MediRoute AI — Premium Hospital Design System
+   ================================================================
+   Glassmorphism + Medical Color Palette
+   ================================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* ================================================================
+   ROOT DESIGN TOKENS
+   ================================================================ */
+:root {
+  /* ── Medical Color Palette ──────────────────────────────── */
+  --primary:           #0d9488;
+  --primary-light:     #14b8a6;
+  --primary-dark:      #0f766e;
+  --primary-50:        #f0fdfa;
+  --primary-100:       #ccfbf1;
+  --primary-glow:      rgba(13, 148, 136, 0.30);
+  --primary-subtle:    rgba(13, 148, 136, 0.08);
+
+  --accent:            #6366f1;
+  --accent-light:      #818cf8;
+  --accent-glow:       rgba(99, 102, 241, 0.20);
+
+  /* ── Surfaces ───────────────────────────────────────────── */
+  --glass-bg:          rgba(255, 255, 255, 0.55);
+  --glass-bg-strong:   rgba(255, 255, 255, 0.72);
+  --glass-bg-subtle:   rgba(255, 255, 255, 0.35);
+  --glass-border:      rgba(255, 255, 255, 0.45);
+  --glass-border-strong: rgba(255, 255, 255, 0.60);
+  --glass-highlight:   rgba(255, 255, 255, 0.75);
+  --glass-blur:        blur(20px) saturate(180%);
+
+  /* ── Background Mesh ────────────────────────────────────── */
+  --bg-1:              #f0f9ff;
+  --bg-2:              #ecfeff;
+  --bg-3:              #f0fdf4;
+  --bg-4:              #f8fafc;
+
+  /* ── Text ───────────────────────────────────────────────── */
+  --text-primary:      #0f172a;
+  --text-secondary:    #334155;
+  --text-tertiary:     #64748b;
+  --text-muted:        #94a3b8;
+
+  /* ── Medical Status Colors ──────────────────────────────── */
+  --emergency:         #dc2626;
+  --emergency-bg:      rgba(220, 38, 38, 0.08);
+  --emergency-border:  rgba(220, 38, 38, 0.25);
+
+  --warning:           #d97706;
+  --warning-bg:        rgba(217, 119, 6, 0.08);
+  --warning-border:    rgba(217, 119, 6, 0.25);
+
+  --success:           #059669;
+  --success-bg:        rgba(5, 150, 105, 0.08);
+  --success-border:    rgba(5, 150, 105, 0.25);
+
+  --info:              #2563eb;
+  --info-bg:           rgba(37, 99, 235, 0.08);
+  --info-border:       rgba(37, 99, 235, 0.25);
+
+  /* ── Shadows ────────────────────────────────────────────── */
+  --shadow-glass:      0 8px 32px rgba(0, 0, 0, 0.06);
+  --shadow-depth:      0 20px 60px rgba(0, 0, 0, 0.10);
+  --shadow-hover:      0 12px 40px rgba(0, 0, 0, 0.12);
+  --shadow-glow:       0 0 30px var(--primary-glow);
+  --shadow-inset:      inset 0 1px 0 var(--glass-highlight);
+
+  /* ── Border ─────────────────────────────────────────────── */
+  --border:            rgba(15, 23, 42, 0.06);
+  --border-strong:     rgba(15, 23, 42, 0.12);
+
+  /* ── Radius ─────────────────────────────────────────────── */
+  --radius-sm:         8px;
+  --radius-md:         12px;
+  --radius-lg:         16px;
+  --radius-xl:         20px;
+  --radius-2xl:        24px;
+  --radius-full:       9999px;
+}
+
+
+/* ================================================================
+   BASE LAYER
+   ================================================================ */
+@layer base {
+  * {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: var(--text-primary);
+    min-height: 100vh;
+    background: var(--bg-4);
+    background-image:
+      radial-gradient(ellipse at 0% 0%,   var(--bg-1) 0%, transparent 50%),
+      radial-gradient(ellipse at 50% 0%,  var(--bg-2) 0%, transparent 50%),
+      radial-gradient(ellipse at 100% 0%, var(--bg-3) 0%, transparent 50%),
+      radial-gradient(ellipse at 0% 100%, var(--bg-2) 0%, transparent 50%),
+      radial-gradient(ellipse at 100% 100%, var(--bg-1) 0%, transparent 50%);
+    background-attachment: fixed;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background: var(--primary-100);
+    color: var(--primary-dark);
+  }
+}
+
+
+/* ================================================================
+   COMPONENT LAYER — Glass Primitives
+   ================================================================ */
+@layer components {
+
+  /* ── Glass Panel (primary container) ────────────────────── */
+  .glass-panel {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--shadow-inset), var(--shadow-glass);
+    border-radius: var(--radius-xl);
+  }
+
+  /* ── Glass Card (interactive) ───────────────────────────── */
+  .glass-card {
+    background: rgba(255, 255, 255, 0.48);
+    backdrop-filter: blur(12px) saturate(160%);
+    -webkit-backdrop-filter: blur(12px) saturate(160%);
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    box-shadow: var(--shadow-inset), 0 4px 16px rgba(0,0,0,0.04);
+    border-radius: var(--radius-lg);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .glass-card:hover {
+    transform: translateY(-2px);
+    background: var(--glass-bg-strong);
+    box-shadow: var(--shadow-inset), var(--shadow-depth);
+    border-color: var(--glass-border-strong);
+  }
+
+  /* ── Card (solid white) ─────────────────────────────────── */
+  .card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-glass);
+    transition: all 0.3s ease;
+  }
+
+  .card:hover {
+    box-shadow: var(--shadow-hover);
+  }
+
+  /* ── Card Flush (no border-radius, for grid layouts) ───── */
+  .card-flush {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  }
+
+  /* ── Input Field ────────────────────────────────────────── */
+  .input-field {
+    width: 100%;
+    height: 48px;
+    padding: 0 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-primary);
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1.5px solid var(--glass-border);
+    border-radius: var(--radius-md);
+    outline: none;
+    transition: all 0.25s ease;
+    box-shadow: var(--shadow-inset);
+  }
+
+  .input-field::placeholder {
+    color: var(--text-muted);
+    font-weight: 400;
+  }
+
+  .input-field:focus {
+    border-color: var(--primary);
+    box-shadow: var(--shadow-inset), 0 0 0 3px var(--primary-glow);
+    background: var(--glass-bg-strong);
+  }
+
+  .input-field:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  /* ── Primary Button ─────────────────────────────────────── */
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    height: 48px;
+    padding: 0 24px;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    border: none;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 14px var(--primary-glow);
+    text-transform: none;
+    letter-spacing: -0.01em;
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 25px var(--primary-glow);
+    filter: brightness(1.08);
+  }
+
+  .btn-primary:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px var(--primary-glow);
+  }
+
+  .btn-primary:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+  }
+
+  /* ── Outline Button ─────────────────────────────────────── */
+  .btn-outline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    height: 40px;
+    padding: 0 16px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    background: var(--glass-bg);
+    backdrop-filter: blur(8px);
+    border: 1.5px solid var(--border-strong);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .btn-outline:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    background: var(--primary-subtle);
+    transform: translateY(-1px);
+  }
+
+  /* ── Badge System ───────────────────────────────────────── */
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 3px 10px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    border-radius: var(--radius-full);
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+
+  .badge-emergency {
+    background: var(--emergency-bg);
+    color: var(--emergency);
+    border-color: var(--emergency-border);
+  }
+
+  .badge-warning {
+    background: var(--warning-bg);
+    color: var(--warning);
+    border-color: var(--warning-border);
+  }
+
+  .badge-success {
+    background: var(--success-bg);
+    color: var(--success);
+    border-color: var(--success-border);
+  }
+
+  .badge-info {
+    background: var(--info-bg);
+    color: var(--info);
+    border-color: var(--info-border);
+  }
+
+  .badge-neutral {
+    background: rgba(100, 116, 139, 0.08);
+    color: var(--text-tertiary);
+    border-color: rgba(100, 116, 139, 0.20);
+  }
+}
+
+
+/* ================================================================
+   ANIMATIONS
+   ================================================================ */
+@keyframes float {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 8px var(--primary-glow); }
+  50%      { box-shadow: 0 0 20px var(--primary-glow); }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-float {
+  animation: float 7s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.4) 50%, transparent 100%);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+
+/* ================================================================
+   SCROLLBAR
+   ================================================================ */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.18);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.30);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(100, 116, 139, 0.18) transparent;
+}

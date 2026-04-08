@@ -1,0 +1,76 @@
+
+/* ================================================================
+   MediRoute AI — App-Level Styles
+   ================================================================ */
+
+/* ── Sidebar glassmorphism ──────────────────────────────────── */
+.sidebar-glass {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.40);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.70),
+    0 8px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* ── Nav item active indicator ──────────────────────────────── */
+.nav-active {
+  background: rgba(255, 255, 255, 0.80);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.9),
+    0 4px 16px rgba(0, 0, 0, 0.06),
+    0 0 0 1px rgba(13, 148, 136, 0.10);
+}
+
+.nav-active .nav-icon {
+  color: #0d9488;
+}
+
+/* ── Stat card pulse ring ───────────────────────────────────── */
+.stat-icon-ring {
+  position: relative;
+}
+
+.stat-icon-ring::after {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  border-radius: inherit;
+  border: 2px solid currentColor;
+  opacity: 0.15;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* ── Header search glass ────────────────────────────────────── */
+.search-glass {
+  background: rgba(255, 255, 255, 0.50);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  transition: all 0.25s ease;
+}
+
+.search-glass:focus-within {
+  background: rgba(255, 255, 255, 0.70);
+  border-color: rgba(13, 148, 136, 0.30);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.8),
+    0 0 0 3px rgba(13, 148, 136, 0.10);
+}
+
+/* ── Content area scroll shadow ─────────────────────────────── */
+.content-scroll {
+  mask-image: linear-gradient(to bottom, transparent 0, black 24px, black calc(100% - 24px), transparent 100%);
+}
+
+/* ── Placeholder panels ─────────────────────────────────────── */
+.placeholder-panel {
+  background:
+    linear-gradient(135deg, rgba(255,255,255,0.60), rgba(255,255,255,0.30));
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1.5px dashed rgba(100, 116, 139, 0.20);
+  border-radius: 20px;
+}
