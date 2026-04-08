@@ -1,8 +1,6 @@
 import React from 'react';
 import { Shield, Users, Activity, AlertTriangle, ArrowUpRight, Heart, Zap } from 'lucide-react';
 import { motion } from 'framer-motion';
-import patientData from '../data/patients.json';
-
 const WARDS = [
   { id: 'Emergency Ward',     icon: Zap,       gradient: 'from-red-500 to-rose-600',    bg: 'bg-red-50',    border: 'border-red-100',    text: 'text-red-600'    },
   { id: 'Mental Health Ward', icon: Heart,      gradient: 'from-amber-500 to-orange-600', bg: 'bg-amber-50',  border: 'border-amber-100',  text: 'text-amber-600'  },
@@ -10,17 +8,17 @@ const WARDS = [
   { id: 'Orthopedics',        icon: Activity,   gradient: 'from-blue-500 to-indigo-600', bg: 'bg-blue-50',   border: 'border-blue-100',   text: 'text-blue-600'   },
 ];
 
-export default function WardManagement() {
+export default function WardManagement({ patients = [] }) {
   const stats = WARDS.map(w => {
-    const patients = patientData.filter(p => p['Ward Name'] === w.id);
-    const occupancy = Math.floor((patients.length / 50) * 100);
+    const wardPatients = patients.filter(p => p['Ward Name'] === w.id);
+    const occupancy = Math.floor((wardPatients.length / 50) * 100);
     return {
       ...w,
-      count: patients.length,
+      count: wardPatients.length,
       occupancy: Math.min(occupancy, 100),
-      emergencies: patients.filter(p => p['Status'] === 'EMERGENCY').length,
-      consulting: patients.filter(p => p['Status'] === 'Consulting').length,
-      free: patients.filter(p => p['Status'] === 'Free').length,
+      emergencies: wardPatients.filter(p => p['Status'] === 'EMERGENCY').length,
+      consulting: wardPatients.filter(p => p['Status'] === 'Consulting' || p['Status'] === 'Active').length,
+      free: wardPatients.filter(p => p['Status'] === 'Free').length,
     };
   });
 

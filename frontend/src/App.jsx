@@ -204,22 +204,28 @@ export default function App() {
     return () => clearInterval(interval);
   }, []);
 
-  // Computed stats from MERGED data (Static + Live)
-  const stats = useMemo(() => {
-    // Map live patients to the same format as static ones for stats calculation
+  // Computed patients from MERGED data (Static + Live)
+  const allPatients = useMemo(() => {
     const mappedLive = livePatients.map(p => ({
+      ...p,
+      'Patient Name': p.name,
       'Ward Name': p.ward,
-      'Status': p.urgency_level === 'Emergency' ? 'Emergency' : 'Active'
+      'Doctor Name': p.doctor || 'Dr. On-Call',
+      'Available Time': p.created_at ? new Date(p.created_at).toLocaleTimeString() : 'Just now',
+      'Status': p.urgency_level === 'Emergency' ? 'EMERGENCY' : 'Active',
+      'Summary': p.symptoms,
+      'isLive': true
     }));
-
-    const allPatients = [...STATIC_PATIENTS, ...mappedLive];
-    
-    const total = allPatients.length;
-    const emergency = allPatients.filter(p => p['Ward Name'] === 'Emergency Ward').length;
-    const consulting = allPatients.filter(p => p['Status'] === 'Consulting' || p['Status'] === 'Active').length;
-    const free = Math.max(0, 50 - total); // Assuming 50 total capacity
-    return { total, emergency, consulting, free };
+    return [...mappedLive, ...STATIC_PATIENTS];
   }, [livePatients]);
+
+  const stats = useMemo(() => {
+    const total = allPatients.length;
+    const emergency = allPatients.filter(p => p['Status'] === 'EMERGENCY' || p['Ward Name'] === 'Emergency Ward').length;
+    const consulting = allPatients.filter(p => p['Status'] === 'Consulting' || p['Status'] === 'Active').length;
+    const free = Math.max(0, 50 - total); 
+    return { total, emergency, consulting, free };
+  }, [allPatients]);
 
   // View titles
   const VIEW_TITLES = {
@@ -429,7 +435,7 @@ export default function App() {
                 exit={{ opacity: 0, y: -8 }}
                 transition={{ duration: 0.2 }}
               >
-                <PatientRecords />
+                <PatientRecords patients={allPatients} />
               </motion.div>
             )}
 
@@ -441,7 +447,7 @@ export default function App() {
                 exit={{ opacity: 0, y: -8 }}
                 transition={{ duration: 0.2 }}
               >
-                <WardManagement />
+                <WardManagement patients={allPatients} />
               </motion.div>
             )}
 

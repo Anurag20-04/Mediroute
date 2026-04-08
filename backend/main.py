@@ -350,7 +350,7 @@ async def get_recent_summaries():
         try:
             from supabase import create_client
             client = create_client(SUPABASE_URL, SUPABASE_KEY)
-            response = client.table('patients').select("*").order('created_at', desc=True).limit(20).execute()
+            response = client.table('patients').select("*").order('created_at', desc=True).limit(100).execute()
             return {"status": "success", "patients": response.data}
         except Exception as e:
             print(f"❌ Supabase fetch error: {e}")

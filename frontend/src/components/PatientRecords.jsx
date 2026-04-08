@@ -1,5 +1,6 @@
-import React, { useState, useMemo, useEffect } from 'react';
-import { Search, Filter, ChevronLeft, ChevronRight, MoreVertical, Users, Loader2 } from 'lucide-react';
+import React, { useState, useMemo } from 'react';
+import { Search, ChevronLeft, ChevronRight, MoreVertical, Users } from 'lucide-react';
+import STATIC_PATIENTS from '../data/patients.json';
 
 const WARD_BADGES = {
   'Emergency Ward': 'badge badge-emergency',
@@ -8,51 +9,20 @@ const WARD_BADGES = {
   'Orthopedics': 'badge badge-info',
 };
 
-export default function PatientRecords() {
-  const [patientData, setPatientData] = useState([]);
-  const [loading, setLoading] = useState(true);
+export default function PatientRecords({ patients = [] }) {
   const [searchTerm, setSearchTerm] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 12;
 
-  useEffect(() => {
-    fetchLiveData();
-  }, []);
-
-  const fetchLiveData = async () => {
-    setLoading(true);
-    try {
-      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:8000';
-      const res = await fetch(`${apiUrl}/summary`);
-      const data = await res.json();
-      if (data.status === 'success') {
-        const mapped = (data.patients || []).map(p => ({
-          'Patient Name': p.name,
-          'Ward Name': p.ward,
-          'Doctor Name': p.doctor || 'Dr. On-Call',
-          'Available Time': p.created_at ? new Date(p.created_at).toLocaleTimeString() : 'Just now',
-          'Status': p.urgency_level === 'Emergency' ? 'EMERGENCY' : 'Active',
-          'Summary': p.symptoms,
-          'id': p.id
-        }));
-        setPatientData(mapped);
-      }
-    } catch (err) {
-      console.error('Failed to fetch records:', err);
-    } finally {
-      setLoading(false);
-    }
-  };
-
   const filteredData = useMemo(() => {
     const q = searchTerm.toLowerCase();
-    return patientData.filter(p =>
+    return patients.filter(p =>
       (p['Patient Name']?.toLowerCase() || '').includes(q) ||
       (p['Doctor Name']?.toLowerCase() || '').includes(q) ||
       (p['Summary']?.toLowerCase() || '').includes(q) ||
       (p['Ward Name']?.toLowerCase() || '').includes(q)
     );
-  }, [searchTerm, patientData]);
+  }, [searchTerm, patients]);
 
   const totalPages = Math.ceil(filteredData.length / itemsPerPage);
   const currentData = filteredData.slice(
@@ -68,7 +38,7 @@ export default function PatientRecords() {
         <div>
           <h2 className="text-[15px] font-black text-slate-800 tracking-tight">Master Patient Index</h2>
           <p className="text-[11px] text-slate-400 font-medium mt-0.5">
-            <span className="text-slate-600 font-bold">{filteredData.length}</span> live records found
+            <span className="text-slate-600 font-bold">{filteredData.length}</span> total records found
           </p>
         </div>
 
@@ -83,25 +53,12 @@ export default function PatientRecords() {
               onChange={(e) => { setSearchTerm(e.target.value); setCurrentPage(1); }}
             />
           </div>
-          <button 
-            onClick={fetchLiveData}
-            className="btn-outline !py-1.5 !h-9 !text-[12px] !rounded-lg flex items-center gap-2"
-          >
-            {loading ? <Loader2 size={13} className="animate-spin" /> : <Filter size={13} />}
-            Refresh
-          </button>
         </div>
       </div>
 
       {/* Table */}
       <div className="flex-1 overflow-auto">
-        {loading && patientData.length === 0 ? (
-          <div className="py-20 text-center">
-            <Loader2 size={32} className="text-teal-500 mx-auto mb-3 animate-spin" />
-            <p className="text-slate-400 text-[13px] font-medium">Connecting to medical records core...</p>
-          </div>
-        ) : (
-          <table className="w-full text-left border-collapse min-w-[800px]">
+        <table className="w-full text-left border-collapse min-w-[800px]">
             <thead className="sticky top-0 z-10">
               <tr className="bg-slate-50/90 backdrop-blur-sm border-b border-slate-200/60">
                 <th className="px-5 py-3 text-[10px] font-bold text-slate-500 uppercase tracking-wider w-64">Patient</th>
@@ -166,10 +123,9 @@ export default function PatientRecords() {
                 </tr>
               ))}
             </tbody>
-          </table>
-        )}
+        </table>
 
-        {filteredData.length === 0 && !loading && (
+        {filteredData.length === 0 && (
           <div className="py-20 text-center">
             <Users size={32} className="text-slate-300 mx-auto mb-3" />
             <p className="text-slate-400 text-[13px] font-medium">
