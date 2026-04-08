@@ -9,6 +9,26 @@ const WELCOME_MSG = {
   timestamp: new Date(),
 };
 
+// ── Typewriter Effect Component ─────────────────────────────
+function TypewriterText({ text, speed = 15, onComplete }) {
+  const [displayedText, setDisplayedText] = useState('');
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    if (index < text.length) {
+      const timeout = setTimeout(() => {
+        setDisplayedText(prev => prev + text[index]);
+        setIndex(prev => prev + 1);
+      }, speed);
+      return () => clearTimeout(timeout);
+    } else if (onComplete) {
+      onComplete();
+    }
+  }, [index, text, speed, onComplete]);
+
+  return <p className="whitespace-pre-wrap font-medium">{displayedText}</p>;
+}
+
 const STEPS = ['Symptoms', 'Identity', 'Clinical Data', 'Routing'];
 
 const STEP_PLACEHOLDERS = {
@@ -42,7 +62,11 @@ function MessageBubble({ msg }) {
           ? 'bg-gradient-to-br from-teal-500/85 to-teal-600/90 backdrop-blur-md text-white border border-teal-400/30 rounded-tr-md shadow-lg shadow-teal-500/10'
           : 'bg-white/50 backdrop-blur-xl text-slate-700 border border-white/50 rounded-tl-md shadow-sm'
       }`}>
-        <p className="whitespace-pre-wrap font-medium">{msg.text}</p>
+        {!isUser && msg.type === 'result' ? (
+          <TypewriterText text={msg.text} />
+        ) : (
+          <p className="whitespace-pre-wrap font-medium">{msg.text}</p>
+        )}
         <div className={`flex items-center gap-1.5 mt-2 ${isUser ? 'justify-end text-teal-100/70' : 'text-slate-400'}`}>
           <p className="text-[9px] font-bold uppercase tracking-widest">
             {msg.timestamp?.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' })}
@@ -169,6 +193,7 @@ export default function ChatInterface({ onSummaryUpdate }) {
         id: Date.now() + 1,
         text: data.reply,
         sender: 'bot',
+        type: data.is_complete ? 'result' : 'chat',
         timestamp: new Date(),
       }]);
       setContext(data.context || {});

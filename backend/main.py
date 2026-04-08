@@ -95,7 +95,7 @@ def classify_ward_local(symptoms_text: str):
         "burn", "burns", "burned", "electric shock", "electrocution",
         "drowning", "near drowning",
         # Violence
-        "attack", "assault", "fight", "beaten",
+        "assault", "fight", "beaten", "gunshot", "stabbed",
     ]
 
     mental_kw = [
@@ -115,11 +115,11 @@ def classify_ward_local(symptoms_text: str):
         "ligament", "torn ligament", "acl", "meniscus",
     ]
 
-    # Check in priority order (emergency first)
-    if any(k in symp for k in emergency_kw):
-        return "Emergency Ward", "Emergency"
-    elif any(k in symp for k in mental_kw):
+    # Check in priority order (Mental Health first to catch 'panic attack' etc.)
+    if any(k in symp for k in mental_kw):
         return "Mental Health Ward", "High"
+    elif any(k in symp for k in emergency_kw):
+        return "Emergency Ward", "Emergency"
     elif any(k in symp for k in ortho_kw):
         return "Orthopedics", "Medium"
     else:
@@ -283,6 +283,7 @@ async def register_patient(summary: PatientSummary):
                 "symptoms": summary.symptoms,
                 "urgency_level": summary.urgency_level,
                 "ward": summary.ward,
+                "doctor": summary.doctor or "Dr. On-Call",
             }
             if summary.email:
                 insert_data["email"] = summary.email

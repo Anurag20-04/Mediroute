@@ -14,7 +14,7 @@ import PatientRecords from './components/PatientRecords';
 import WardManagement from './components/WardManagement';
 
 // Data
-import patientData from './data/patients.json';
+import STATIC_PATIENTS from './data/patients.json';
 
 // ==============================
 // NAV CONFIG
@@ -183,15 +183,43 @@ export default function App() {
   const [activeNav, setActiveNav] = useState('triage');
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [searchQuery, setSearchQuery] = useState('');
+  const [livePatients, setLivePatients] = useState([]);
 
-  // Computed stats from patient data
-  const stats = useMemo(() => {
-    const total = patientData.length;
-    const emergency = patientData.filter(p => p['Ward Name'] === 'Emergency Ward').length;
-    const consulting = patientData.filter(p => p['Status'] === 'Consulting').length;
-    const free = patientData.filter(p => p['Status'] === 'Free').length;
-    return { total, emergency, consulting, free };
+  // Fetch live patients from Supabase via backend
+  useEffect(() => {
+    const fetchLive = async () => {
+      try {
+        const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+        const res = await fetch(`${apiUrl}/summary`);
+        const data = await res.json();
+        if (data.status === 'success') {
+          setLivePatients(data.patients || []);
+        }
+      } catch (err) {
+        console.error('Failed to sync live patients:', err);
+      }
+    };
+    fetchLive();
+    const interval = setInterval(fetchLive, 30000); // Sync every 30s
+    return () => clearInterval(interval);
   }, []);
+
+  // Computed stats from MERGED data (Static + Live)
+  const stats = useMemo(() => {
+    // Map live patients to the same format as static ones for stats calculation
+    const mappedLive = livePatients.map(p => ({
+      'Ward Name': p.ward,
+      'Status': p.urgency_level === 'Emergency' ? 'Emergency' : 'Active'
+    }));
+
+    const allPatients = [...STATIC_PATIENTS, ...mappedLive];
+    
+    const total = allPatients.length;
+    const emergency = allPatients.filter(p => p['Ward Name'] === 'Emergency Ward').length;
+    const consulting = allPatients.filter(p => p['Status'] === 'Consulting' || p['Status'] === 'Active').length;
+    const free = Math.max(0, 50 - total); // Assuming 50 total capacity
+    return { total, emergency, consulting, free };
+  }, [livePatients]);
 
   // View titles
   const VIEW_TITLES = {
