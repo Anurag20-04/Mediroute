@@ -188,7 +188,7 @@ export default function ChatInterface({ onSummaryUpdate }) {
       console.error('Chat error:', err);
       setMessages(p => [...p, {
         id: Date.now() + 1,
-        text: 'Connection error. Please ensure the backend is running on port 8000 and try again.',
+        text: 'Connection error. server is down.',
         sender: 'bot',
         timestamp: new Date(),
       }]);

@@ -186,47 +186,51 @@ async def chat_interaction(request: ChatRequest):
         data = {"reply": reply_text, "context": context, "is_complete": is_complete}
 
         if is_complete:
-            ward_assigned = None
-            urgency = "Low"
+            # Local heuristic check for safety override
+            heuristic_ward, heuristic_urgency = classify_ward_local(context.get("symptoms", ""))
 
             # Try n8n first (if configured)
             if N8N_WEBHOOK_URL:
                 try:
                     print(f"📡 Firing n8n webhook for patient: {context.get('name')}")
                     webhook_payload = {"body": {"context": context}}
-                    res = requests.post(N8N_WEBHOOK_URL, json=webhook_payload, timeout=15)
+                    res = requests.post(N8N_WEBHOOK_URL, json=webhook_payload, timeout=12)
                     res.raise_for_status()
                     n8n_response = res.json()
                     print(f"✅ n8n response: {n8n_response}")
 
                     n8n_ward = n8n_response.get("ward", "").strip()
-                    # Validate n8n returned a real ward name
                     valid_wards = ["Emergency Ward", "Mental Health Ward", "General Ward", "Orthopedics"]
+                    
                     if n8n_ward in valid_wards:
                         ward_assigned = n8n_ward
-                        if "Emergency" in ward_assigned:
+                        # SAFETY OVERRIDE: If n8n says General but heuristic says Emergency, trust the heuristic
+                        if ward_assigned == "General Ward" and heuristic_ward == "Emergency Ward":
+                            print("🚨 SAFETY OVERRIDE: n8n returned General Ward for high-risk symptoms. Upgrading to Emergency.")
+                            ward_assigned = "Emergency Ward"
                             urgency = "Emergency"
-                        elif "Mental Health" in ward_assigned:
-                            urgency = "High"
-                        elif "Orthopedics" in ward_assigned:
-                            urgency = "Medium"
                         else:
-                            urgency = "Low"
+                            if "Emergency" in ward_assigned: urgency = "Emergency"
+                            elif "Mental Health" in ward_assigned: urgency = "High"
+                            elif "Orthopedics" in ward_assigned: urgency = "Medium"
+                            else: urgency = "Low"
                     else:
-                        print(f"⚠️ n8n returned invalid ward: '{n8n_ward}' — falling back to local")
-                        ward_assigned = None
+                        print(f"⚠️ n8n returned invalid/unknown ward: '{n8n_ward}' — falling back to local heuristic")
+                        ward_assigned, urgency = heuristic_ward, heuristic_urgency
                 except Exception as e:
                     print(f"❌ n8n webhook error: {e}")
-                    ward_assigned = None
+                    ward_assigned, urgency = heuristic_ward, heuristic_urgency
+            else:
+                print("⚙️ n8n not configured — using local heuristic routing")
+                ward_assigned, urgency = heuristic_ward, heuristic_urgency
 
-            # Local heuristic fallback (always reliable)
+            # Final check to ensure ward_assigned isn't None
             if not ward_assigned:
-                print("⚙️  Using local heuristic routing")
-                ward_assigned, urgency = classify_ward_local(context.get("symptoms", ""))
+                ward_assigned, urgency = "General Ward", "Low"
 
-            # Assign a doctor from the ward
+            # Assign a doctor from the ward database
             doctor_name = assign_doctor(ward_assigned)
-            print(f"👨‍⚕️ Assigned: {doctor_name} in {ward_assigned}")
+            print(f"👨‍⚕️ Final Assignment: {doctor_name} in {ward_assigned}")
 
             # Build the reply message with doctor assignment
             reply_text = (

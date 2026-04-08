@@ -378,11 +378,13 @@ The frontend will be at `http://localhost:5173` and will proxy API calls to `htt
 |---------|----------|
 | CORS errors in browser | Check `FRONTEND_URL` env var on Render matches your Vercel URL exactly |
 | "Neural link interrupted" chat error | Backend may be sleeping (free Render tier). Wait 30s and retry |
-| Supabase insert fails | Verify your `SUPABASE_URL` and `SUPABASE_KEY`. Check RLS policies |
+| Supabase "websockets" error | Fix: Ensure `websockets>=12.0` is in `requirements.txt`. (Already added) |
+| Supabase insert fails | Verify `SUPABASE_URL` and `SUPABASE_KEY`. Check RLS policies are "Allow all" |
 | n8n webhook timeout | Check n8n workflow is **Active**. Verify the webhook URL is correct |
 | Google Sheets "Permission denied" | Re-authorize the Google Sheets OAuth credential in n8n |
-| Empty patient records page | This uses local `patients.json` data — it's always populated |
+| Empty patient records page | Now dynamically fetches from Supabase. Ensure backend is running |
 | Build fails on Vercel | Ensure `VITE_API_URL` does NOT have a trailing slash |
+| Wrong ward for "accident" | Robust local heuristic now overrides n8n if emergency is detected |
 
 ---
 
