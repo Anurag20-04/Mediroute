@@ -283,7 +283,6 @@ async def register_patient(summary: PatientSummary):
                 "symptoms": summary.symptoms,
                 "urgency_level": summary.urgency_level,
                 "ward": summary.ward,
-                "doctor": summary.doctor or "Dr. On-Call",
             }
             if summary.email:
                 insert_data["email"] = summary.email
