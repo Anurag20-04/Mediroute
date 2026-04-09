@@ -106,6 +106,8 @@ def classify_ward_local(symptoms_text: str):
         "psychosis", "schizophrenia", "bipolar", "manic",
         "eating disorder", "anorexia", "bulimia",
         "insomnia", "can't sleep", "afraid", "phobia",
+        "stress", "behavioral", "crisis", "addiction", "withdrawal", "voices",
+        "autism", "agitation", "violent", "nervous", "nervous breakdown",
     ]
 
     ortho_kw = [
@@ -201,10 +203,17 @@ async def chat_interaction(request: ChatRequest):
                     print(f"✅ n8n response: {n8n_response}")
 
                     n8n_ward = n8n_response.get("ward", "").strip()
-                    valid_wards = ["Emergency Ward", "Mental Health Ward", "General Ward", "Orthopedics"]
+                    # Case-insensitive fuzzy matching for n8n response
+                    n8n_ward_lower = n8n_ward.lower()
+                    matched_ward = None
                     
-                    if n8n_ward in valid_wards:
-                        ward_assigned = n8n_ward
+                    if "emergency" in n8n_ward_lower: matched_ward = "Emergency Ward"
+                    elif "mental" in n8n_ward_lower: matched_ward = "Mental Health Ward"
+                    elif "ortho" in n8n_ward_lower: matched_ward = "Orthopedics"
+                    elif "general" in n8n_ward_lower: matched_ward = "General Ward"
+
+                    if matched_ward:
+                        ward_assigned = matched_ward
                         # SAFETY OVERRIDE: If n8n says General but heuristic says Emergency, trust the heuristic
                         if ward_assigned == "General Ward" and heuristic_ward == "Emergency Ward":
                             print("🚨 SAFETY OVERRIDE: n8n returned General Ward for high-risk symptoms. Upgrading to Emergency.")
@@ -233,12 +242,12 @@ async def chat_interaction(request: ChatRequest):
             doctor_name = assign_doctor(ward_assigned)
             print(f"👨‍⚕️ Final Assignment: {doctor_name} in {ward_assigned}")
 
-            # Build the reply message with doctor assignment
+            # Build the reply message with doctor assignment (Plain text, no markdown stars)
             reply_text = (
                 f"Your triage analysis is complete.\n\n"
-                f"🏥 You have been routed to: **{ward_assigned}**\n"
-                f"👨‍⚕️ Your assigned doctor: **{doctor_name}**\n"
-                f"⚡ Urgency Level: **{urgency}**\n\n"
+                f"🏥 You have been routed to: {ward_assigned}\n"
+                f"👨‍⚕️ Your assigned doctor: {doctor_name}\n"
+                f"⚡ Urgency Level: {urgency}\n\n"
                 f"Please proceed to the ward reception. Your doctor has been notified."
             )
             data["reply"] = reply_text
