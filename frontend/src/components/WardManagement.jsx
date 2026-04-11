@@ -126,7 +126,7 @@ export default function WardManagement({ patients = [] }) {
           <h3 className="text-[14px] font-black text-slate-800 tracking-tight mb-1.5">Facility Telemetry</h3>
           <p className="text-[11px] text-slate-400 font-medium mb-5">Resource utilization across the hospital campus</p>
 
-          <div className="grid grid-cols-2 gap-3">
+          <div className="grid grid-cols-1 xs:grid-cols-2 gap-3">
             {[
               { label: 'ICU Beds',      value: '2 available',  sub: 'of 12 total',     color: 'border-l-red-400'    },
               { label: 'Ventilators',    value: '5 standby',    sub: 'of 8 units',      color: 'border-l-amber-400'  },
@@ -134,10 +134,10 @@ export default function WardManagement({ patients = [] }) {
               { label: 'Ambulances',     value: '3 Ready',      sub: '1 in transit',    color: 'border-l-blue-400'   },
             ].map(t => (
               <div key={t.label} className={`bg-white/60 backdrop-blur-sm border border-slate-200/50 border-l-4 ${t.color}
-                rounded-xl p-3.5 shadow-sm`}>
-                <p className="text-[10px] text-slate-400 font-bold uppercase tracking-widest">{t.label}</p>
-                <p className="text-[14px] font-black text-slate-700 mt-1.5 tracking-tight">{t.value}</p>
-                <p className="text-[10px] text-slate-400 mt-0.5 font-medium">{t.sub}</p>
+                rounded-xl p-3 lg:p-3.5 shadow-sm`}>
+                <p className="text-[9px] lg:text-[10px] text-slate-400 font-bold uppercase tracking-widest">{t.label}</p>
+                <p className="text-[13px] lg:text-[14px] font-black text-slate-700 mt-1.5 tracking-tight">{t.value}</p>
+                <p className="text-[9px] lg:text-[10px] text-slate-400 mt-0.5 font-medium">{t.sub}</p>
               </div>
             ))}
           </div>

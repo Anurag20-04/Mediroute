@@ -181,9 +181,23 @@ function SystemStatus() {
 export default function App() {
   const [summary, setSummary] = useState(null);
   const [activeNav, setActiveNav] = useState('triage');
-  const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [sidebarOpen, setSidebarOpen] = useState(window.innerWidth >= 1024);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
   const [searchQuery, setSearchQuery] = useState('');
+  const [mobileSearchOpen, setMobileSearchOpen] = useState(false);
   const [livePatients, setLivePatients] = useState([]);
+
+  // Handle resize for mobile states
+  useEffect(() => {
+    const handleResize = () => {
+      const mobile = window.innerWidth < 1024;
+      setIsMobile(mobile);
+      if (!mobile) setSidebarOpen(true);
+      else setSidebarOpen(false);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   // Fetch live patients from Supabase via backend
   useEffect(() => {
@@ -243,10 +257,22 @@ export default function App() {
 
       <BgDecorator />
 
+      {/* Backdrop for mobile */}
+      {isMobile && sidebarOpen && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          onClick={() => setSidebarOpen(false)}
+          className="fixed inset-0 bg-slate-900/40 backdrop-blur-sm z-30 lg:hidden"
+        />
+      )}
+
       {/* ═══════════ SIDEBAR ═══════════ */}
       <aside
-        className="relative z-20 flex flex-col shrink-0 transition-all duration-500 ease-out"
-        style={{ width: sidebarOpen ? 260 : 76 }}
+        className={`fixed inset-y-0 left-0 z-40 lg:relative lg:z-20 flex flex-col shrink-0 transition-all duration-500 ease-out
+          ${isMobile ? (sidebarOpen ? 'translate-x-0' : '-translate-x-full') : ''}`}
+        style={{ width: (sidebarOpen || isMobile) ? 260 : 76 }}
       >
         <div className="h-full m-3 mr-0 rounded-3xl sidebar-glass flex flex-col overflow-hidden">
 
@@ -309,7 +335,7 @@ export default function App() {
           </nav>
 
           {/* Bottom: Status */}
-          {sidebarOpen && (
+          {(sidebarOpen || !isMobile) && (
             <div className="p-4 border-t border-white/20">
               <SystemStatus />
             </div>
@@ -321,58 +347,76 @@ export default function App() {
       <main className="flex-1 flex flex-col relative z-10 min-w-0">
 
         {/* Header */}
-        <header className="h-[72px] flex items-center justify-between px-8 shrink-0">
-          <div className="flex items-center gap-5">
+        <header className="h-[72px] flex items-center justify-between px-4 lg:px-8 shrink-0 relative z-20">
+          <div className="flex items-center gap-3 lg:gap-5">
             <button
               onClick={() => setSidebarOpen(!sidebarOpen)}
               className="w-10 h-10 rounded-xl bg-white/50 backdrop-blur-md border border-white/40
-                flex items-center justify-center hover:bg-white/70 transition-all shadow-sm"
+                flex items-center justify-center hover:bg-white/70 transition-all shadow-sm shrink-0"
             >
               <Menu size={18} className="text-slate-600" />
             </button>
 
-            <div>
-              <h1 className="text-xl font-black text-slate-800 tracking-tight leading-none">
+            <div className={`${mobileSearchOpen ? 'hidden xs:block' : 'block'}`}>
+              <h1 className="text-lg lg:text-xl font-black text-slate-800 tracking-tight leading-none truncate max-w-[140px] xs:max-w-none">
                 {VIEW_TITLES[activeNav]}
               </h1>
-              <p className="text-[11px] text-slate-400 font-medium mt-0.5">
-                MediRoute AI • Real-time Hospital Operations
+              <p className="text-[9px] lg:text-[11px] text-slate-400 font-medium mt-0.5 truncate">
+                {isMobile ? 'MediRoute AI' : 'MediRoute AI • Real-time Hospital Operations'}
               </p>
             </div>
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 lg:gap-3">
             {/* Search */}
-            <div className="search-glass rounded-xl flex items-center gap-2.5 px-4 py-2.5">
-              <Search size={15} className="text-slate-400 shrink-0" />
-              <input
-                placeholder="Search patients, wards..."
-                value={searchQuery}
-                onChange={e => setSearchQuery(e.target.value)}
-                className="bg-transparent outline-none text-[13px] font-medium text-slate-700 placeholder:text-slate-400 w-48"
-              />
-              {searchQuery && (
-                <button onClick={() => setSearchQuery('')}>
-                  <X size={14} className="text-slate-400 hover:text-slate-600" />
+            <div className={`
+              ${isMobile && !mobileSearchOpen ? 'w-auto' : 'search-glass rounded-xl flex items-center gap-2.5 px-3 lg:px-4 py-2.5 transition-all duration-300'}
+              ${isMobile && mobileSearchOpen ? 'fixed top-[14px] left-14 right-4 bg-white z-50' : ''}
+            `}>
+              {(isMobile && !mobileSearchOpen) ? (
+                <button
+                  onClick={() => setMobileSearchOpen(true)}
+                  className="w-10 h-10 rounded-xl bg-white/50 backdrop-blur-md border border-white/40
+                    flex items-center justify-center hover:bg-white/70 transition-all shadow-sm"
+                >
+                  <Search size={16} className="text-slate-600" />
                 </button>
+              ) : (
+                <>
+                  <Search size={15} className="text-slate-400 shrink-0" />
+                  <input
+                    placeholder="Search..."
+                    autoFocus={isMobile && mobileSearchOpen}
+                    value={searchQuery}
+                    onChange={e => setSearchQuery(e.target.value)}
+                    className="bg-transparent outline-none text-[13px] font-medium text-slate-700 placeholder:text-slate-400 w-24 xs:w-32 lg:w-48"
+                  />
+                  {(searchQuery || (isMobile && mobileSearchOpen)) && (
+                    <button onClick={() => { setSearchQuery(''); if(isMobile) setMobileSearchOpen(false); }}>
+                      <X size={14} className="text-slate-400 hover:text-slate-600" />
+                    </button>
+                  )}
+                </>
               )}
             </div>
 
-            {/* Notifications */}
-            <button className="relative w-10 h-10 rounded-xl bg-white/50 backdrop-blur-md border border-white/40
-              flex items-center justify-center hover:bg-white/70 transition-all shadow-sm">
-              <Bell size={18} className="text-slate-600" />
-              <span className="absolute top-2 right-2 w-2.5 h-2.5 bg-red-500 rounded-full
-                border-2 border-white shadow-[0_0_6px_rgba(220,38,38,0.5)]" />
-            </button>
+            {/* Notifications - Only show on larger screens or simple icon on mobile */}
+            {!mobileSearchOpen && (
+              <button className="relative w-10 h-10 rounded-xl bg-white/50 backdrop-blur-md border border-white/40
+                flex items-center justify-center hover:bg-white/70 transition-all shadow-sm shrink-0">
+                <Bell size={18} className="text-slate-600" />
+                <span className="absolute top-2.5 right-2.5 w-2 h-2 bg-red-500 rounded-full
+                  border-2 border-white" />
+              </button>
+            )}
 
-            {/* Clock */}
-            <LiveClock />
+            {/* Clock - Hide on small screens */}
+            {!isMobile && !mobileSearchOpen && <LiveClock />}
           </div>
         </header>
 
         {/* Content */}
-        <div className="flex-1 px-8 pb-6 overflow-y-auto">
+        <div className="flex-1 px-4 lg:px-8 pb-6 overflow-y-auto overflow-x-hidden">
           <AnimatePresence mode="wait">
             {activeNav === 'triage' && (
               <motion.div

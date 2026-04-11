@@ -224,14 +224,14 @@ export default function ChatInterface({ onSummaryUpdate }) {
   };
 
   return (
-    <div className="glass-panel flex flex-col overflow-hidden relative group"
-      style={{ height: '560px' }}>
+    <div className="glass-panel flex flex-col overflow-hidden relative group
+      h-[560px] lg:h-[600px] max-h-[calc(100vh-160px)]">
 
       {/* Decorative top glow */}
       <div className="absolute top-0 inset-x-0 h-28 bg-gradient-to-b from-teal-500/4 to-transparent pointer-events-none z-0" />
 
       {/* ── Header ── */}
-      <div className="flex items-center justify-between px-6 py-3.5 border-b border-white/15 shrink-0 relative z-10">
+      <div className="flex items-center justify-between px-4 lg:px-6 py-3.5 border-b border-white/15 shrink-0 relative z-10">
         <div className="flex items-center gap-3.5">
           <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-teal-400 to-teal-600
             flex items-center justify-center shadow-lg shadow-teal-500/20">
@@ -257,7 +257,7 @@ export default function ChatInterface({ onSummaryUpdate }) {
       </div>
 
       {/* ── Progress Stepper ── */}
-      <div className="px-6 py-2.5 border-b border-white/10 shrink-0 bg-white/5 backdrop-blur-sm">
+      <div className="px-4 lg:px-6 py-2.5 border-b border-white/10 shrink-0 bg-white/5 backdrop-blur-sm">
         <div className="flex items-center gap-0.5">
           {STEPS.map((s, i) => (
             <React.Fragment key={s}>
@@ -293,7 +293,7 @@ export default function ChatInterface({ onSummaryUpdate }) {
       {/* ── Messages (SCROLLABLE CONTAINER) ── */}
       <div
         ref={messagesContainerRef}
-        className="flex-1 overflow-y-auto p-5 space-y-4 relative"
+        className="flex-1 overflow-y-auto p-4 lg:p-5 space-y-4 relative"
         style={{ minHeight: 0 }}
       >
         <AnimatePresence initial={false}>
@@ -304,7 +304,7 @@ export default function ChatInterface({ onSummaryUpdate }) {
       </div>
 
       {/* ── Input Area ── */}
-      <div className="px-5 py-4 border-t border-white/15 shrink-0 bg-white/15 backdrop-blur-xl">
+      <div className="px-4 lg:px-5 py-3 lg:py-4 border-t border-white/15 shrink-0 bg-white/15 backdrop-blur-xl">
         {done ? (
           <motion.div
             initial={{ opacity: 0, y: 8 }}

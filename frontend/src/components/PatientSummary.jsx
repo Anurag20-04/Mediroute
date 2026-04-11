@@ -43,8 +43,8 @@ export default function PatientSummary({ summary }) {
   // Empty state
   if (!summary) {
     return (
-      <div className="glass-panel flex flex-col items-center justify-center text-center p-8"
-        style={{ height: '560px' }}>
+      <div className="glass-panel flex flex-col items-center justify-center text-center p-8
+        h-[560px] lg:h-[600px] max-h-[calc(100vh-160px)]">
         <div className="w-14 h-14 rounded-2xl bg-slate-100/80 flex items-center justify-center mb-5">
           <FileText size={24} className="text-slate-400" strokeWidth={1.5} />
         </div>
@@ -105,8 +105,8 @@ export default function PatientSummary({ summary }) {
       initial={{ opacity: 0, scale: 0.98 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.3 }}
-      className={`glass-panel flex flex-col overflow-hidden border-l-4 ${wt.borderAccent}`}
-      style={{ height: '560px' }}
+      className={`glass-panel flex flex-col overflow-hidden border-l-4 ${wt.borderAccent}
+        h-[560px] lg:h-[600px] max-h-[calc(100vh-160px)]`}
     >
       {/* Ward Header */}
       <div className="px-4 py-3 border-b border-white/15 bg-white/10 shrink-0">
